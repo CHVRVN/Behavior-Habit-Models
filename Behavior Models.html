@@ -1,4 +1,3 @@
-html
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,14 +17,10 @@ html
 }
 body{background:var(--bg);color:var(--text);font-family:var(--font-sans);font-size:15px;line-height:1.65;min-height:100vh}
 h1,h2,h3{font-family:var(--font-serif);font-weight:500}
-
-/* HEADER */
 .site-header{padding:3rem 2rem 2rem;max-width:1100px;margin:0 auto;border-bottom:1px solid var(--border)}
 .site-header h1{font-size:2.8rem;font-weight:400;letter-spacing:-0.02em;color:var(--text);line-height:1.1;margin-bottom:.5rem}
 .site-header h1 span{color:var(--amber);font-style:italic}
 .site-header p{color:var(--muted);font-size:.9rem;margin-bottom:1.5rem}
-
-/* CONTROLS */
 .controls{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
 .search-wrap{position:relative;flex:1;min-width:220px}
 .search-wrap input{width:100%;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:.55rem .75rem .55rem 2.2rem;color:var(--text);font-family:var(--font-sans);font-size:.9rem;outline:none;transition:border-color .15s}
@@ -36,32 +31,21 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
 .pill:hover,.pill.active{border-color:var(--amber);color:var(--amber);background:var(--amber-dim)}
 .pill.all.active{background:var(--amber);color:#1a0d00;border-color:var(--amber)}
 .count-badge{font-size:.75rem;color:var(--muted);padding:.25rem .5rem;background:var(--surface);border-radius:4px;border:1px solid var(--border)}
-
-/* MAIN */
 .main{max-width:1100px;margin:0 auto;padding:1.5rem 2rem 4rem}
-.section-label{font-family:var(--font-serif);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);padding:.5rem 0;margin-bottom:.75rem;border-bottom:1px solid var(--faint)}
-.category-group{margin-bottom:2rem}
-
-/* GRID */
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:1rem}
-
-/* CARD */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:1rem}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;transition:border-color .15s}
 .card:hover{border-color:var(--faint)}
 .card.hidden{display:none}
 .card-head{padding:1rem 1.1rem .85rem;cursor:pointer;user-select:none}
-.card-head:hover .toggle{color:var(--amber)}
 .card-meta{display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;flex-wrap:wrap}
 .cat-badge{font-size:.7rem;padding:.2rem .6rem;border-radius:4px;font-weight:500;letter-spacing:.02em}
 .year-badge{font-size:.72rem;color:var(--muted);padding:.2rem .5rem;background:var(--surface2);border-radius:4px}
 .card-title{font-family:var(--font-serif);font-size:1.18rem;font-weight:500;color:var(--text);line-height:1.25;margin-bottom:.2rem}
 .card-author{font-size:.8rem;color:var(--muted);font-style:italic;margin-bottom:.6rem}
-.overview{font-size:.875rem;color:#b0ad a4;line-height:1.6;color:rgba(228,226,219,.75)}
+.overview{font-size:.875rem;color:rgba(228,226,219,.75);line-height:1.6}
 .toggle{display:inline-flex;align-items:center;gap:.3rem;font-size:.78rem;color:var(--muted);margin-top:.65rem;transition:color .15s}
 .toggle svg{width:12px;height:12px;transition:transform .2s}
 .toggle.open svg{transform:rotate(180deg)}
-
-/* DETAILS */
 .card-details{display:none;border-top:1px solid var(--border);padding:1rem 1.1rem}
 .card-details.open{display:block}
 .detail-section{margin-bottom:.9rem}
@@ -69,6 +53,11 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
 .detail-label{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:.3rem;font-family:var(--font-sans);font-weight:500}
 .detail-text{font-size:.85rem;color:rgba(228,226,219,.8);line-height:1.6}
 .citation{font-size:.8rem;color:rgba(228,226,219,.6);line-height:1.55;font-style:italic;padding:.5rem .7rem;background:var(--surface2);border-left:2px solid var(--amber-dim);border-radius:0 4px 4px 0}
+/* METHODOLOGY BOX */
+.method-box{padding:.6rem .75rem;background:rgba(58,125,200,.06);border:1px solid rgba(58,125,200,.18);border-radius:6px;font-size:.82rem;color:rgba(228,226,219,.78);line-height:1.6}
+.method-box .method-type{display:inline-block;font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#5a9fdb;margin-bottom:.3rem}
+.method-box p{margin-top:.2rem}
+/* PROS/CONS */
 .pros-cons{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
 .pros,.cons{padding:.5rem .6rem;border-radius:6px}
 .pros{background:rgba(26,140,106,.08);border:1px solid rgba(26,140,106,.2)}
@@ -80,16 +69,10 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
 .pros ul li::before{content:"✓";position:absolute;left:0;color:#4aad88;font-size:.75rem}
 .cons ul li::before{content:"×";position:absolute;left:0;color:#c86a5a;font-size:.75rem}
 .note-box{padding:.5rem .7rem;background:rgba(201,146,64,.06);border-left:2px solid rgba(201,146,64,.3);border-radius:0 4px 4px 0;font-size:.8rem;color:rgba(228,226,219,.65);line-height:1.6;font-style:italic}
-
-/* EMPTY */
 .empty{text-align:center;padding:3rem;color:var(--muted);font-style:italic;display:none}
 .empty.show{display:block}
-
-/* STAT BAR */
 .stat-bar{display:flex;gap:1.5rem;padding:.75rem 0;border-bottom:1px solid var(--border);margin-bottom:1.25rem;flex-wrap:wrap}
 .stat{font-size:.82rem;color:var(--muted)}.stat strong{color:var(--amber);font-weight:500}
-
-/* CAT COLORS */
 .cat-Habit{background:rgba(29,158,117,.15);color:#3dbb8a}
 .cat-Motivation{background:rgba(201,146,64,.15);color:#d4a454}
 .cat-Decision{background:rgba(58,125,200,.15);color:#5a9fdb}
@@ -99,8 +82,6 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
 .cat-Social{background:rgba(90,200,58,.15);color:#70c050}
 .cat-Friction{background:rgba(138,136,128,.15);color:#aaa898}
 .cat-Goal{background:rgba(200,160,58,.15);color:#d4a840}
-
-/* RESPONSIVE */
 @media(max-width:600px){
   .site-header h1{font-size:2rem}
   .grid{grid-template-columns:1fr}
@@ -110,10 +91,9 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
 </style>
 </head>
 <body>
-
 <header class="site-header">
   <h1>Behavior &amp; Habit <span>Models</span></h1>
-  <p>43 frameworks across 9 categories — with citations, history, and critical analysis</p>
+  <p>43 frameworks across 9 categories — with citations, methodology, history, and critical analysis</p>
   <div class="controls">
     <div class="search-wrap">
       <input type="text" id="search" placeholder="Search by name, author, or keyword…" autocomplete="off">
@@ -122,363 +102,447 @@ h1,h2,h3{font-family:var(--font-serif);font-weight:500}
   </div>
   <div class="pills" style="margin-top:.75rem" id="filter-pills"></div>
 </header>
-
 <main class="main">
   <div class="stat-bar">
     <div class="stat"><strong>43</strong> models</div>
     <div class="stat"><strong>9</strong> categories</div>
     <div class="stat"><strong>1927 – 2019</strong> publication span</div>
-    <div class="stat"><strong>Click any card</strong> for full details</div>
+    <div class="stat"><strong>Click any card</strong> for details + methodology</div>
   </div>
   <div class="empty" id="empty">No models match your search.</div>
   <div class="grid" id="grid"></div>
 </main>
-
 <script>
 const models=[
 {name:"Fogg Behavior Model (B = MAP)",cat:"Habit Formation",year:2009,author:"BJ Fogg",catKey:"Habit",
-overview:"Behavior occurs only when Motivation, Ability, and a Prompt converge at the exact same moment. All three must be present simultaneously — high motivation without a prompt produces no action.",
-history:"Fogg developed this at Stanford's Persuasive Technology Lab in the early 2000s, originally formulated as B=MAT (Trigger). The 'T' was renamed 'Prompt' around 2018 to reflect richer real-world cues. The 2009 conference paper has accumulated 2,000+ citations, mostly as a design framework, not a scientific test.",
+overview:"Behavior occurs only when Motivation, Ability, and a Prompt converge at the exact same moment. All three must be present simultaneously — high motivation alone without a prompt produces no behavior.",
+history:"Fogg developed this at Stanford's Persuasive Technology Lab in the early 2000s, originally as B=MAT (Trigger). The 'T' became 'Prompt' around 2018. The 2009 ACM conference paper accumulated 2,000+ citations, mostly as a design tool, not a scientific theory.",
+methodType:"Conference Paper / Design Framework",
+methodology:"The 2009 paper is a theoretical model paper, not a controlled experiment. Fogg presented the model at the 4th ACM Persuasive Technology Conference with conceptual argumentation and case examples, not new empirical data. The two axes of the B=MAP diagram (motivation on Y, ability on X) are conceptual — no measurement units exist. The model draws on prior motivation and friction research but was not itself validated through controlled trials. Most citing papers use FBM as a design guide rather than testing its specific predictions.",
 citation:"Fogg, B. J. (2009). A Behavior Model for Persuasive Design. Proceedings of the 4th International Conference on Persuasive Technology, Article 40. ACM.",
-pros:["Instantly actionable for product and UX designers","Reframes failure as a system problem, not a motivation problem","Works across virtually any target behavior"],
-cons:["Never validated in a peer-reviewed RCT","Oversimplifies complex motivational dynamics","Critics note it directly underpins addictive product design"],
-notes:"Fogg's key design recommendation: default to reducing friction (raising Ability) rather than boosting motivation — the former is more controllable."},
+pros:["Instantly actionable for product and UX designers","Reframes failure as a system problem, not a person problem","Works across virtually any target behavior"],
+cons:["Never validated in a peer-reviewed RCT","Oversimplifies complex motivational dynamics","Underpins addictive product design — ethical concerns remain unresolved"],
+notes:"Fogg's key design recommendation: default to reducing friction (raising Ability) rather than boosting motivation, which is harder to control reliably."},
 
 {name:"James Clear's 4 Laws of Behavior Change",cat:"Habit Formation",year:2018,author:"James Clear",catKey:"Habit",
 overview:"Good habits are built by making them Obvious (cue), Attractive (craving), Easy (response), and Satisfying (reward). Bad habits are broken by inverting each law.",
-history:"Clear synthesized research from Duhigg, Fogg, and behavioral neuroscience into a mass-market framework in Atomic Habits (2018), which sold over 15 million copies. It is a practitioner synthesis, not original academic research.",
+history:"Clear synthesized Duhigg, Fogg, and behavioral neuroscience into a mass-market framework in Atomic Habits (2018), which sold over 15 million copies. It is a practitioner synthesis, not original academic research.",
+methodType:"Journalistic Synthesis / Trade Book",
+methodology:"No original empirical study. Clear conducted journalistic research: interviews with athletes, coaches, scientists, executives, and a wide review of behavioral science literature. The 4 Laws are a named synthesis of established findings (cue-routine-reward, variable rewards, friction reduction) rather than independently validated constructs. The book's methodology resembles a case-study narrative style more than academic research. No sample, no control group, no outcome measurement.",
 citation:"Clear, J. (2018). Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. Avery/Penguin.",
 pros:["Extremely practical and accessible to general audiences","Inversion for breaking habits is elegantly symmetric","Evidence-inspired synthesis with concrete application steps"],
 cons:["Popularized synthesis, not original empirical work","Doesn't address deep psychological or trauma-related barriers","May oversimplify complex addictive behaviors"],
-notes:"Clear layered an 'identity' dimension on top: the most durable habits require changing who you believe you are — 'I am a runner' rather than 'I am trying to run.'"},
+notes:"Clear layered an 'identity' dimension underneath the 4 Laws: the most durable habits require changing who you believe you are — 'I am a runner' rather than 'I want to run.'"},
 
 {name:"Duhigg's Habit Loop",cat:"Habit Formation",year:2012,author:"Charles Duhigg",catKey:"Habit",
-overview:"Every habit follows a neurological three-part loop: a Cue triggers a Routine, which delivers a Reward. The loop becomes increasingly automatic as the neural pathway strengthens. The Golden Rule: keep the cue and reward, swap the routine.",
-history:"Duhigg, an NYT journalist, translated MIT neuroscience research — especially Ann Graybiel's basal ganglia work — into a mainstream framework in The Power of Habit (2012). The 'craving' concept emerged from his additional synthesis of addiction research.",
+overview:"Every habit follows a neurological three-part loop: a Cue triggers a Routine, which delivers a Reward. The loop becomes increasingly automatic over time. The Golden Rule of habit change: keep the cue and reward, swap only the routine.",
+history:"Duhigg, an NYT journalist, translated MIT neuroscience research — especially Ann Graybiel's basal ganglia work — into a mainstream framework in The Power of Habit (2012).",
+methodType:"Investigative Journalism / Secondary Synthesis",
+methodology:"The Power of Habit draws on Graybiel's MIT rat maze experiments (rats implanted with sensors in the basal ganglia that showed neural activity spiking at habit cues and rewards, quieting mid-routine after habitization) and Wolfram Schultz's dopamine research. Duhigg also conducted interviews with researchers, executives, and recovering addicts. The habit loop is a journalistic synthesis of these primary studies, not a new controlled trial. Graybiel's key study used implanted tetrodes in rat striatum to measure neural firing during T-maze navigation across repeated trials, demonstrating chunking in the basal ganglia.",
 citation:"Duhigg, C. (2012). The Power of Habit: Why We Do What We Do in Life and Business. Random House.",
 pros:["Grounded in basal ganglia neuroscience research","'Golden Rule' of habit change is clinically useful","Explains why habits never fully disappear — only get overwritten"],
-cons:["Craving addition was Duhigg's synthesis, not a validated mechanism in isolation","Popularized from secondary literature, not primary research","Doesn't explain why some loops are more resistant to change"],
-notes:"MIT's Ann Graybiel found the brain consolidates habit sequences in the basal ganglia, making them semi-permanent pathways even without practice for years."},
+cons:["Popularized from secondary literature, not primary research","Doesn't explain why some loops are more resistant to change","Craving was Duhigg's addition, not a validated mechanism in isolation"],
+notes:"MIT's Ann Graybiel found the brain consolidates habit sequences in the basal ganglia, making them semi-permanent pathways even without practice for years — the neural basis of the Habit Loop."},
 
 {name:"Nir Eyal's Hook Model",cat:"Habit Formation",year:2014,author:"Nir Eyal",catKey:"Habit",
-overview:"Four-step cycle for habit-forming products: Trigger (external or internal) → Action (simplest behavior in context) → Variable Reward (unpredictable payoff) → Investment (user input that loads the next trigger). Each pass deepens the habit.",
-history:"Eyal developed the model from experience in gaming and advertising, first as a blog post then the book Hooked (2014). It became standard product management curriculum. Eyal later wrote Indistractable (2019) as a partial ethical counterpoint.",
+overview:"Four-step product cycle: Trigger (external or internal) → Action (simplest behavior) → Variable Reward (unpredictable payoff) → Investment (user input that loads the next trigger). Each pass deepens the habit.",
+history:"Eyal developed the model from experience in gaming and advertising, first publishing it as a blog post before Hooked (2014). He later wrote Indistractable (2019) partly as an ethical counterpoint.",
+methodType:"Practitioner Framework / Industry Synthesis",
+methodology:"No original controlled experiment. Eyal synthesized behavioral psychology research (Skinner's variable rewards, Bandura's self-efficacy, Fogg's B=MAP), combined it with case study analysis of successful habit-forming products (Twitter, Pinterest, Instagram, Bible App), and drew on his consulting experience with tech companies. The book follows a practitioner case-study methodology: analyze successful products, identify common patterns, formalize into a replicable framework. No control group, no randomized trial, no longitudinal outcome measurement.",
 citation:"Eyal, N. (2014). Hooked: How to Build Habit-Forming Products. Portfolio/Penguin.",
-pros:["Immediately actionable for product designers and founders","Variable reward mechanism is empirically validated via Skinner","Explains retention and engagement better than standard metrics alone"],
-cons:["Explicitly optimizes for engagement, not user wellbeing","Ethical concerns about exploiting psychological vulnerabilities","Practitioner framework only — not peer-reviewed"],
-notes:"Eyal has since expressed ambivalence about his earlier work, noting it can be weaponized. The 'Investment' step is particularly potent — it creates sunk-cost commitment to the product."},
+pros:["Immediately actionable for product designers","Variable reward mechanism is empirically grounded via Skinner","Explains retention better than standard engagement metrics"],
+cons:["Optimizes for engagement, not user wellbeing","Ethical concerns about exploiting psychological vulnerabilities","Not peer-reviewed; practitioner framework only"],
+notes:"The 'Investment' step is particularly powerful — it creates sunk-cost commitment and personalizes the product so future triggers feel more relevant. Eyal designed it explicitly to reload the hook."},
 
 {name:"Fogg's Tiny Habits",cat:"Habit Formation",year:2019,author:"BJ Fogg",catKey:"Habit",
-overview:"Start with the smallest possible version of a behavior, anchor it to an existing routine (Anchor → Tiny Behavior → Celebration), and immediately celebrate. Positive emotion at the moment of completion wires the habit into the brain.",
-history:"Developed from years of Fogg's workshops before the 2019 book. It is the practical application of B=MAP — when motivation is uncertain, shrink the behavior to a scale where ability is trivially sufficient.",
+overview:"Start with the smallest possible version of a behavior, anchor it to an existing routine (Anchor → Tiny Behavior → Celebration), and immediately celebrate. Positive emotion at completion wires the habit into the brain.",
+history:"Developed from years of Fogg's free online workshops before the 2019 book. It is the practical application of B=MAP — when motivation is uncertain, shrink the behavior until ability is trivially sufficient.",
+methodType:"Workshop-Based Longitudinal Observation",
+methodology:"Fogg ran free 5-day Tiny Habits programs online, collecting self-report data from tens of thousands of participants who chose personal habits and reported daily outcomes. He observed patterns in which habits stuck and which failed, identifying celebration as a variable that strongly correlated with retention. This is observational data, not a controlled trial — no randomization, no control group, no blinding. Participants self-selected into the program. The book formalizes patterns observed from this large-scale qualitative dataset rather than a controlled experiment.",
 citation:"Fogg, B. J. (2019). Tiny Habits: The Small Changes That Change Everything. Houghton Mifflin Harcourt.",
-pros:["Extremely low entry barrier — almost anyone can start","Celebration mechanism has neurological basis (dopamine + positive affect)","Sidesteps motivation problems entirely by hacking ability"],
-cons:["Limited peer-reviewed evidence for the specific method","Scaling from tiny to meaningful behaviors is underaddressed","Celebration can feel performative or forced for some people"],
-notes:"Fogg's key claim: behavior change fails not because people lack motivation but because they start too big. Shrinking the behavior — not the goal — is the intervention."},
+pros:["Extremely low entry barrier","Celebration mechanism has neurological basis (dopamine + affect)","Sidesteps motivation problems by hacking ability"],
+cons:["No RCT validating the specific method","Scaling from tiny to meaningful behaviors is underaddressed","Celebration can feel performative for some"],
+notes:"Fogg's core claim: behavior change fails not because people lack motivation but because they start too big. The intervention is shrinking the behavior, not the goal."},
 
 {name:"Self-Determination Theory (SDT)",cat:"Motivation & Drive",year:1985,author:"Edward Deci & Richard Ryan",catKey:"Motivation",
-overview:"Sustainable motivation requires satisfying three innate psychological needs: Autonomy (self-direction), Competence (mastery), and Relatedness (connection). Behavior driven by intrinsic motivation is more persistent; external rewards can undermine it.",
-history:"Deci's 1971 study showed that paying people for enjoyable work reduced intrinsic motivation. SDT was formally introduced in their 1985 book, expanded through a family of mini-theories (Cognitive Evaluation Theory, Organismic Integration Theory, etc.) over decades.",
-citation:"Deci, E. L., & Ryan, R. M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. Plenum. Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation. American Psychologist, 55(1), 68–78.",
-pros:["One of the most empirically supported motivation theories in existence","Explains why external incentives often backfire long-term","Applies powerfully across education, healthcare, work, and parenting"],
-cons:["The three needs may not be universal across collectivist cultures","Autonomy support is resource-intensive to deliver at scale","Operationalizing all three needs simultaneously is complex"],
-notes:"The 'overjustification effect' — where rewarding inherently enjoyable activities reduces future engagement — is one of SDT's most replicated and counterintuitive findings."},
+overview:"Sustainable motivation requires three innate needs: Autonomy (self-direction), Competence (mastery), and Relatedness (connection). External rewards can undermine intrinsic motivation for already-interesting activities.",
+history:"Deci's 1971 SOMA puzzle experiment challenged behaviorist assumptions. SDT was formally introduced in their 1985 book and expanded through multiple mini-theories (CET, OIT, BNT) over decades.",
+methodType:"Laboratory Experiment → Meta-Analytic Program",
+methodology:"The foundational 1971 experiment (Deci): Two groups of college students worked on SOMA puzzle cubes across three sessions. The experimenter left the room mid-session, leaving magazines and the puzzle; free-choice time with the puzzle served as the behavioral measure of intrinsic motivation. Control group received no reward. Experimental group received $1 per puzzle on day 2, then no reward on day 3. Result: experimental group spent significantly less free-choice time on the puzzle on day 3 than the control group — demonstrating that withdrawing a contingent reward undermined intrinsic motivation. Deci, Koestner & Ryan (1999) meta-analyzed 128 controlled experiments confirming the finding across contexts.",
+citation:"Deci, E. L., & Ryan, R. M. (1985). Intrinsic Motivation and Self-Determination in Human Behavior. Plenum. Ryan, R. M., & Deci, E. L. (2000). American Psychologist, 55(1), 68–78.",
+pros:["One of the most empirically supported motivation theories","Explains why external incentives often backfire long-term","Applies across education, healthcare, work, and parenting"],
+cons:["Universal applicability across collectivist cultures is contested","Autonomy support is resource-intensive to deliver at scale","Lab conditions of SOMA experiment are criticised as not reflecting real-world incentive structures"],
+notes:"The overjustification effect — paying people for enjoyable activities reduces future engagement — is SDT's most counterintuitive and replicated finding. Eisenberger & Cameron (1996) challenged its universality, sparking an ongoing empirical debate."},
 
 {name:"Maslow's Hierarchy of Needs",cat:"Motivation & Drive",year:1943,author:"Abraham Maslow",catKey:"Motivation",
 overview:"Motivation follows a five-level pyramid: Physiological → Safety → Love/Belonging → Esteem → Self-actualization. Lower needs must be substantially satisfied before higher needs become motivating.",
-history:"Proposed in Psychological Review (1943). Notably, the famous pyramid visualization was added by management textbooks — Maslow never drew it. Despite limited empirical support, it became one of psychology's most cited and taught theories globally.",
+history:"Proposed in Psychological Review (1943). The famous pyramid was added by management textbooks — Maslow never drew it. Despite limited empirical support, it became one of psychology's most cited and taught theories.",
+methodType:"Clinical Observation / Humanistic Synthesis (No Empirical Experiment)",
+methodology:"Maslow's 1943 paper was a purely theoretical synthesis based on his clinical observations and reading of anthropological literature. He drew on case studies of healthy, self-actualizing people (including Abraham Lincoln and Albert Einstein by analysis of biographies) rather than controlled experiments. No statistical data, no control group, no measurement instrument was involved in the original paper. Wahba & Bridwell's 1976 meta-analysis of empirical tests found 'little consistent support' for the specific hierarchical ordering in actual studies — the most commonly cited scientific critique of the model.",
 citation:"Maslow, A. H. (1943). A theory of human motivation. Psychological Review, 50(4), 370–396.",
-pros:["Intuitive and extremely easy to communicate and teach","Correctly highlights that basic safety needs often override higher motivations","Useful heuristic for diagnostic thinking in organizational and clinical contexts"],
-cons:["Rigid hierarchical order is empirically unsupported (Wahba & Bridwell, 1976 meta-analysis)","Cross-cultural validity is contested — collectivist cultures weight relatedness differently","The pyramid is a misrepresentation that Maslow never endorsed"],
-notes:"Maslow himself noted self-actualization could occur even when lower needs were unmet. He also proposed a 'peak experiences' level later in his career, which the popular pyramid omits."},
+pros:["Intuitive and extremely easy to communicate and teach","Highlights that basic safety needs often override higher motivations","Useful heuristic for diagnostic thinking in organizational contexts"],
+cons:["Rigid hierarchical order is empirically unsupported (Wahba & Bridwell, 1976)","Cross-cultural validity is contested — relatedness doesn't universally rank below esteem","The pyramid is a misrepresentation that Maslow never endorsed"],
+notes:"Maslow himself noted self-actualization could occur even when lower needs were partially unmet. Later in his career he added 'peak experiences' and 'transcendence' — levels the popular pyramid omits entirely."},
 
 {name:"Herzberg's Two-Factor Theory",cat:"Motivation & Drive",year:1959,author:"Frederick Herzberg",catKey:"Motivation",
-overview:"Work motivation has two independent dimensions: Hygiene factors (salary, supervision, conditions) prevent dissatisfaction but don't create satisfaction. Motivators (achievement, recognition, meaningful work) actively drive engagement. Absence of dissatisfaction ≠ presence of motivation.",
-history:"Based on Herzberg's Pittsburgh study of 200 accountants and engineers (1959) using critical incident interviews. It remains foundational in organizational psychology and directly informed the 'job enrichment' movement in management.",
+overview:"Hygiene factors (salary, supervision, conditions) prevent dissatisfaction but don't create satisfaction. Motivators (achievement, recognition, meaningful work) actively drive engagement. Absence of dissatisfaction ≠ presence of motivation.",
+history:"Based on Herzberg's Pittsburgh study of 200 engineers and accountants (1959). It remains foundational in organizational psychology and directly informed the 'job enrichment' movement.",
+methodType:"Critical Incident Interview Study",
+methodology:"Herzberg, Mausner & Snyderman (1959) recruited 200 engineers and accountants in Pittsburgh. Participants were asked to recall incidents at work that made them feel exceptionally good or exceptionally bad about their jobs (the 'critical incident technique'). Interviewers probed for sequences of events, durations, and attributions. Content analysis of 476 incidents (positive and negative) revealed a systematic pattern: positive memories clustered around achievement, recognition, and the work itself; negative memories clustered around company policy, supervision, and salary. The key methodological limitation: attribution bias — people naturally credit themselves for successes (motivators) and blame external factors for failures (hygiene factors).",
 citation:"Herzberg, F., Mausner, B., & Snyderman, B. B. (1959). The Motivation to Work. Wiley.",
-pros:["Cleanly separates 'satisfaction' from 'motivation' — a practically important distinction","Directly applicable to job and workplace design","Explains why pay raises produce only temporary motivational effects"],
-cons:["Critical incident methodology creates attribution bias (people credit internal factors for success, blame external for failure)","Replication results have been inconsistent across industries and cultures","May not generalize beyond white-collar professional populations"],
-notes:"Herzberg's practical recommendation was 'job enrichment' — expanding roles vertically to include greater autonomy, responsibility, and growth, not just more tasks (job loading)."},
+pros:["Cleanly separates 'satisfaction' from 'motivation' — a practically important distinction","Directly applicable to job design","Explains why pay raises have only temporary motivational effects"],
+cons:["Critical incident methodology creates attribution bias built into the design","Replication results have been inconsistent across industries and cultures","May not generalize beyond white-collar professional populations from 1950s Pittsburgh"],
+notes:"Herzberg's practical recommendation was 'job enrichment' — expanding roles vertically with greater autonomy and responsibility — not 'job loading' (simply assigning more tasks of the same type)."},
 
 {name:"McClelland's Need Theory (nAch / nAff / nPow)",cat:"Motivation & Drive",year:1961,author:"David McClelland",catKey:"Motivation",
-overview:"People are primarily motivated by one of three acquired needs: Achievement (nAch — mastering challenges), Affiliation (nAff — belonging and relationships), or Power (nPow — influence and control). Dominant need shapes career preference and leadership style.",
-history:"Built on Murray's needs framework and the Thematic Apperception Test (TAT) to measure implicit motives. His 1961 book The Achieving Society linked nAch to economic development at national levels — a sweeping and controversial claim.",
+overview:"People are primarily motivated by one of three acquired needs: Achievement (mastering challenges), Affiliation (belonging), or Power (influence and control). Dominant need shapes career preference and leadership style.",
+history:"Built on Murray's needs framework and the Thematic Apperception Test (TAT) to measure implicit motives. His 1961 The Achieving Society linked nAch to economic development at national levels.",
+methodType:"Projective Test (TAT) / Content Analysis / Longitudinal Studies",
+methodology:"McClelland used the Thematic Apperception Test (TAT): participants were shown ambiguous pictures and asked to write stories about them. Stories were then coded for achievement, affiliation, or power imagery using a standardized scoring manual (scoring inter-rater reliability was typically r = 0.85–0.90). McClelland also conducted cross-national analyses — comparing TAT imagery in children's textbooks across countries against subsequent economic growth rates — to argue that nAch predicted national economic development. Longitudinal studies tracked individuals from college through careers, finding nAch scores predicted managerial advancement. Key limitation: TAT has low test-retest reliability (r ≈ 0.25–0.50 in many studies), raising concerns about measurement consistency.",
 citation:"McClelland, D. C. (1961). The Achieving Society. Van Nostrand. McClelland, D. C. (1987). Human Motivation. Cambridge University Press.",
 pros:["Distinguishes motivation profiles usefully for leadership and team design","nAch can be trained — achievement motivation workshops showed entrepreneurial behavior increases","Backed by longitudinal studies connecting implicit motives to career outcomes"],
-cons:["TAT measurement is subjective and has unreliable inter-rater consistency","The three needs may not be exhaustive of human motivation","Cross-cultural validity of nAch is linked to individualistic cultural assumptions"],
-notes:"McClelland found that effective managers are typically high nPow + low nAff — power motivation tempered by institutional loyalty outperforms pure affiliation-seeking in leadership roles."},
+cons:["TAT has low test-retest reliability — measurement validity is contested","Cross-national nAch → economic growth claim is largely unfalsifiable","Cultural specificity of nAch is tied to individualistic assumptions"],
+notes:"McClelland found that effective managers are high nPow + low nAff — power motivation tempered by institutional loyalty outperforms pure affiliation-seeking in organizational leadership."},
 
 {name:"Expectancy Theory (VIE)",cat:"Motivation & Drive",year:1964,author:"Victor Vroom",catKey:"Motivation",
-overview:"Motivation = Valence × Instrumentality × Expectancy. People act when they believe: effort leads to performance (E), performance leads to outcomes (I), and those outcomes are valued (V). Any zero in the formula collapses motivation entirely.",
-history:"Vroom's 1964 Work and Motivation was the first major cognitive theory of work motivation, shifting focus from needs to rational calculation. Porter & Latham extended it into a dynamic feedback model in 1968.",
+overview:"Motivation = Valence × Instrumentality × Expectancy. People act when: effort leads to performance (E), performance leads to outcomes (I), and those outcomes are valued (V). Any zero collapses motivation entirely.",
+history:"Vroom's 1964 Work and Motivation was the first major cognitive theory of work motivation, shifting focus from needs to rational calculation. Porter & Latham extended it in 1968.",
+methodType:"Theoretical Synthesis (No Original Experiment)",
+methodology:"Vroom's 1964 book was a theoretical synthesis, not a new empirical study. He synthesized prior motivation research (Lewin's field theory, Tolman's purposive behaviorism, Atkinson's expectancy-value model) into a formal multiplicative model. His approach was logical-deductive: establish axioms, derive predictions, then selectively cite empirical literature for support. Subsequent researchers tested VIE empirically using questionnaire measures of V, I, and E, with mixed results (some studies find additive models perform comparably to the multiplicative one). The assumption that people consciously calculate the three components is often challenged.",
 citation:"Vroom, V. H. (1964). Work and Motivation. Wiley.",
-pros:["Explains precisely why incentives fail: low expectancy, low instrumentality, or low valence","Multiplicative structure is analytically powerful — identifies the weakest link","Grounded in cognitive theory rather than needs-based assumptions"],
-cons:["Assumes rational cognitive calculation that most people don't consciously perform","The three components are difficult to measure reliably","Underweights emotion, habit, social context, and unconscious motivation"],
-notes:"Porter & Lawler's (1968) extension showed that satisfaction feeds back into future expectancy, making motivation dynamic — past success or failure reshapes future motivation calculations."},
+pros:["Explains precisely why incentives fail (low expectancy, low instrumentality, or low valence)","Multiplicative structure identifies the weakest link in a motivation chain","Grounded in cognitive theory — a significant advance over needs-based models"],
+cons:["Assumes rational calculation people rarely perform consciously","V, I, and E are difficult to measure independently and reliably","Underweights emotion, habit, social context, and unconscious motivation"],
+notes:"Porter & Lawler (1968) extended VIE by showing satisfaction feeds back into future expectancy — making motivation dynamic rather than a static, one-shot calculation."},
 
 {name:"System 1 / System 2 (Dual Process Theory)",cat:"Decision-Making & Cognition",year:2011,author:"Daniel Kahneman",catKey:"Decision",
-overview:"Two modes of thinking operate in parallel: System 1 is fast, automatic, emotional, and heuristic-driven. System 2 is slow, effortful, deliberate, and logical. The vast majority of daily behavior is System 1; System 2 is recruited only when System 1 signals something unusual.",
-history:"The System 1/2 labels were coined by Stanovich & West (2000). Kahneman synthesized decades of heuristics-and-biases research in Thinking, Fast and Slow (2011), making dual-process theory the dominant framework for behavioral economics and nudge design.",
+overview:"System 1 is fast, automatic, emotional, and heuristic-driven. System 2 is slow, effortful, deliberate, and logical. Most daily behavior is System 1; System 2 is recruited only when System 1 flags something unusual.",
+history:"Stanovich & West coined the System 1/2 labels in 2000. Kahneman synthesized decades of heuristics-and-biases research in Thinking, Fast and Slow (2011), making dual-process theory the dominant framework for behavioral economics.",
+methodType:"Meta-Synthesis of Experimental Literature",
+methodology:"Thinking, Fast and Slow is not a single experiment but a synthesis of 40+ years of experimental psychology. Key underlying methods: cognitive psychology experiments presenting reasoning problems (the bat-and-ball problem, the Linda problem) to university students; participants give answers and explanations are sought. The bat-and-ball problem (a bat and ball cost $1.10; bat costs $1 more than ball — how much does the ball cost?) reliably elicits System 1 errors (10 cents, not 5 cents) across thousands of participants. The 'two-system' architecture itself is a theoretical framing, not a directly observable structure; dual-process theory is a family of models with varying specific claims, not a single theory.",
 citation:"Kahneman, D. (2011). Thinking, Fast and Slow. Farrar, Straus and Giroux. Stanovich, K. E., & West, R. F. (2000). Individual differences in reasoning. Psychological Review, 107(3), 645–668.",
 pros:["Explains a wide range of cognitive biases within a coherent framework","Highly intuitive and communicable to non-specialists","Foundational for nudge design, behavioral economics, and UX"],
-cons:["Several supporting studies failed to replicate during the replication crisis","Binary framing oversimplifies — more recent work suggests a spectrum or multiple processes","Kahneman overstated System 2's ability to 'correct' System 1 errors"],
-notes:"Gigerenzer argues heuristics (System 1) are often adaptive and accurate — 'fast and frugal' rather than error-prone — directly challenging Kahneman's implicit bias toward System 2 reasoning."},
+cons:["Several supporting studies (ego depletion, priming) failed to replicate during the replication crisis","Binary framing oversimplifies — more recent work suggests a continuum","Kahneman overstated System 2's ability to 'correct' System 1 errors"],
+notes:"Gigerenzer argues heuristics (System 1) are often adaptive and accurate — 'fast and frugal' — not just error-prone. This directly challenges the implicit hierarchy in Kahneman's framing."},
 
 {name:"Nudge Theory",cat:"Decision-Making & Cognition",year:2008,author:"Richard Thaler & Cass Sunstein",catKey:"Decision",
-overview:"Small, low-cost changes to the choice environment (nudges) reliably steer behavior toward better outcomes without restricting choice or changing incentives. Core mechanisms: defaults, framing, salience, simplification, social norms, timing. The approach is called 'libertarian paternalism.'",
-history:"Formalized in Nudge (2008). The UK Behavioural Insights Team ('Nudge Unit') was created in 2010 to apply these principles to government policy. Thaler received the 2017 Nobel Prize in Economics partly for this work.",
+overview:"Small, low-cost changes to the choice environment (nudges) reliably steer behavior toward better outcomes without restricting choice. Core mechanisms: defaults, framing, salience, simplification, social norms, timing.",
+history:"Formalized in Nudge (2008). The UK Behavioural Insights Team was created in 2010 to apply these principles to government policy. Thaler received the 2017 Nobel Prize in Economics.",
+methodType:"Theoretical Framework + Field Experiments",
+methodology:"The theoretical framework draws on behavioral economics laboratory experiments (Kahneman & Tversky's heuristics, Thaler's own loss aversion work). Empirical support comes from multiple field experiments: (1) UK BIT's tax compliance letter adding social norm text ('9 out of 10 people in your area pay their taxes on time') increased payment rates measurably in RCTs; (2) auto-enrollment in 401k retirement plans studied by Madrian & Shea (2001) showed participation rates jumping from ~49% to ~86% purely by changing the default; (3) Wansink's food plate-size studies (though some later questioned). Most nudge evidence comes from real-world A/B tests in government contexts, not tightly controlled laboratory experiments.",
 citation:"Thaler, R. H., & Sunstein, C. R. (2008). Nudge: Improving Decisions about Health, Wealth, and Happiness. Yale University Press.",
-pros:["Scalable policy tool with low implementation cost","Preserves individual autonomy and choice","Meta-analytically validated across multiple domains (Hummel & Maedche, 2019: d ≈ 0.45)"],
-cons:["Effect sizes are often modest and context-dependent","Can be misused for manipulation — 'sludge' (anti-nudges) exploit same mechanisms","'Who decides what's good?' is a genuine value-laden political question"],
-notes:"The UK BIT's organ donation opt-out default change and tax compliance letter experiments adding social norm language are classic documented applications with measurable, large-scale effects."},
+pros:["Scalable policy tool with low implementation cost","Preserves individual autonomy and free choice","Meta-analytically validated across multiple domains (Hummel & Maedche, 2019: d ≈ 0.45)"],
+cons:["Effect sizes are often modest and context-dependent","Can be captured by bad actors — 'dark patterns' and 'sludge'","'Who decides what's good?' involves unavoidable value judgments"],
+notes:"The UK BIT's organ donation opt-out default change and tax letter experiments with social norm language are classic documented applications with measurable, large-scale effects."},
 
 {name:"Heuristics & Biases Framework",cat:"Decision-Making & Cognition",year:1974,author:"Amos Tversky & Daniel Kahneman",catKey:"Decision",
-overview:"People rely on mental shortcuts (heuristics) that are generally useful but produce systematic, predictable errors (biases). Three core heuristics: Availability (judging likelihood by ease of recall), Representativeness (judging by resemblance to prototype), and Anchoring (over-weighting initial information).",
-history:"The 1974 Science paper 'Judgment Under Uncertainty' launched behavioral economics and is among social science's most cited papers. It directly challenged the rational agent assumption in economics and transformed multiple fields.",
+overview:"People rely on mental shortcuts (heuristics) that are generally useful but produce systematic, predictable errors (biases). Three core heuristics: Availability, Representativeness, and Anchoring.",
+history:"The 1974 Science paper launched behavioral economics. It is among social science's most cited papers and directly challenged the rational agent assumption in economics.",
+methodType:"Experimental Cognitive Psychology (Pencil-and-Paper Judgment Tasks)",
+methodology:"Tversky and Kahneman administered sets of probability and judgment problems to Israeli college students, faculty, and professionals. Participants answered questions under time pressure without access to calculation tools. Key experiments: (1) Availability: participants asked to judge whether words beginning with 'K' or having 'K' as the third letter appear more often in English — the former is recalled more easily, leading to systematic overestimation despite the opposite being true; (2) Representativeness: 'Linda problem' — told Linda is a bank teller vs. a bank teller who is active in feminist movements — most rated conjunction as more probable than the component; (3) Anchoring: spinning a wheel of fortune (rigged to land on 10 or 65), then asking what percentage of African countries are in the UN — participants anchored to the wheel number. Studies were between-subjects, comparing responses across problem variants.",
 citation:"Tversky, A., & Kahneman, D. (1974). Judgment under uncertainty: Heuristics and biases. Science, 185(4157), 1124–1131.",
-pros:["Empirically rich: hundreds of replicated bias findings","Directly applicable to policy design, medical decision-making, and product design","Foundational to the entire behavioral economics research program"],
-cons:["Several high-profile studies (ego depletion, behavioral priming) failed to replicate","Framed as cognitive deficits; Gigerenzer argues heuristics are often adaptive","The growing 'bias catalog' risks becoming unwieldy and unfalsifiable"],
+pros:["Empirically rich: hundreds of replicated bias findings across populations","Directly applicable to policy design, medical decision-making, and product UX","Foundational to the entire behavioral economics research program"],
+cons:["Several high-profile extensions (ego depletion, facial feedback) failed to replicate","Framed as cognitive deficits; Gigerenzer argues heuristics are often adaptive","The growing catalog of 200+ named biases risks becoming a non-falsifiable list"],
 notes:"Tversky died in 1996; Kahneman accepted the 2002 Nobel Prize and explicitly acknowledged Tversky as an equal contributor who would have shared it."},
 
 {name:"Choice Architecture",cat:"Decision-Making & Cognition",year:2008,author:"Thaler, Sunstein & Johnson",catKey:"Decision",
-overview:"The structure and presentation of choices powerfully influences decisions regardless of their content. Choice architects are always present — the question is whether design is intentional. Key tools: defaults, ordering, framing, simplification, and complexity management.",
-history:"Emerged from Thaler & Sunstein's nudge work and Eric Johnson's research on default effects. Johnson & Goldstein's cross-national organ donation study (2003) — showing near-100% vs. ~20% rates driven by opt-out vs. opt-in defaults alone — became the field's landmark demonstration.",
-citation:"Thaler, R. H., Sunstein, C. R., & Balz, J. P. (2010). Choice architecture. In E. Shafir (Ed.), The Behavioral Foundations of Policy. Princeton University Press.",
-pros:["High-impact, low-cost policy intervention","Works through existing cognitive patterns rather than fighting them","Default effect is among the most robust findings in behavioral economics"],
-cons:["Can be captured by bad actors — 'dark patterns' are choice architecture weaponized against users","Effects may diminish as people become aware of them","Ethical responsibility for setting 'good defaults' involves unavoidable value judgments"],
-notes:"Amazon's one-click purchase, streaming autoplay, and app notification defaults are all choice architecture applied at massive commercial scale — often without user awareness."},
+overview:"The structure and presentation of choices powerfully influences decisions independent of their content. Designers of choice environments are always 'choice architects' — the question is whether design is intentional. Key tools: defaults, ordering, framing, and complexity management.",
+history:"Emerged from Thaler & Sunstein's nudge work and Eric Johnson's research on default effects. Johnson & Goldstein's organ donation study (2003) became the field's landmark demonstration.",
+methodType:"Archival Analysis + Online Experiment",
+methodology:"Johnson & Goldstein (2003) used two complementary methods. First, an online experiment with 161 participants randomly assigned to one of three conditions: (a) opt-in default (not a donor unless you choose), (b) opt-out default (donor unless you choose otherwise), or (c) neutral (forced choice). Consent rates were ~42% (opt-in), ~82% (opt-out neutral framing), and ~79% (neutral). Second, a cross-national archival analysis of actual organ donor registration rates across 11 European countries, comparing opt-in (Austria: 99.98%; Belgium: 98%) vs. opt-out countries (Denmark: 4.25%; Germany: 12%) — dramatic differences explained almost entirely by default framing, not cultural attitudes.",
+citation:"Thaler, R. H., Sunstein, C. R., & Balz, J. P. (2010). Choice architecture. In E. Shafir (Ed.), The Behavioral Foundations of Policy. Princeton. Johnson, E. J., & Goldstein, D. (2003). Do defaults save lives? Science, 302(5649), 1338–1339.",
+pros:["High-impact, low-cost policy intervention","Works without requiring any conscious deliberation from the target person","Default effect documented across organ donation, retirement savings, energy tariffs"],
+cons:["Can be weaponized — 'dark patterns' are choice architecture used against users","Opt-out can feel coercive when stakes are high","Who sets the 'right' default involves unavoidable value judgments"],
+notes:"Auto-enrollment in 401(k) retirement plans in the U.S. increased participation from ~49% to ~86% in Madrian & Shea's (2001) study — a dramatic outcome from switching a default alone."},
 
 {name:"Prospect Theory",cat:"Decision-Making & Cognition",year:1979,author:"Daniel Kahneman & Amos Tversky",catKey:"Decision",
-overview:"People evaluate outcomes relative to a reference point rather than in absolute terms, and are loss-averse: losses loom ~2x as large as equivalent gains. The value function is concave for gains (diminishing sensitivity) and convex for losses, producing risk-aversion for gains and risk-seeking to avoid losses.",
-history:"Published in Econometrica (1979), Prospect Theory replaced Expected Utility Theory as the dominant descriptive model of risky choice. It is one of the most cited papers in social science and is central to the 2002 Nobel Prize in Economics.",
+overview:"People evaluate outcomes relative to a reference point and are loss-averse: losses loom ~2× as large as equivalent gains. The value function is concave for gains (risk-aversion) and convex for losses (risk-seeking to avoid sure losses).",
+history:"Published in Econometrica (1979), Prospect Theory replaced Expected Utility Theory as the dominant descriptive model of risky choice and is central to the 2002 Nobel Prize in Economics.",
+methodType:"Controlled Hypothetical Gamble Experiments",
+methodology:"Kahneman & Tversky administered sets of hypothetical monetary choice problems to Israeli college students and university faculty. Participants chose between option pairs (e.g., 'Which do you prefer: a certain gain of $500, or a 50% chance of gaining $1,000?') across dozens of problem variants systematically manipulating probabilities, stakes, and framing. Crucially: all gambles were hypothetical — no money actually changed hands. This raises external validity concerns (would behavior differ with real stakes?). The certainty effect was demonstrated by showing risk aversion for certain gains disappears when both options become probabilistic. The isolation effect was demonstrated by showing the same objective choice in different decomposed framings produced inconsistent preferences. Findings were replicated across Israeli and American samples.",
 citation:"Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. Econometrica, 47(2), 263–291.",
-pros:["Empirically superior to Expected Utility Theory across hundreds of studies","Loss aversion explains real-world financial behavior that EUT cannot","One of the most influential papers in social science — 30,000+ citations"],
-cons:["Descriptive, not normative — says what people do, not what they should do","Reference point determination is theoretically underspecified","Less applicable to non-risky everyday decisions"],
-notes:"Loss aversion underpins: free trial marketing (you're 'losing' what you have), price anchoring, status quo bias, and the endowment effect — people demand more to give up something they own than they'd pay to acquire it."},
+pros:["Empirically superior to Expected Utility Theory across hundreds of studies","Loss aversion explains real-world financial behavior EUT cannot","One of the most cited papers in social science — 30,000+ citations"],
+cons:["All original evidence was based on hypothetical gambles — real-stakes behavior differs","Reference point determination is theoretically underspecified","Less directly applicable to non-risky everyday decisions"],
+notes:"Loss aversion underpins free-trial marketing (you're 'losing' what you have), price anchoring, the endowment effect, and status quo bias — people demand more to give up something they own than they'd pay to acquire the same thing."},
 
 {name:"Transtheoretical Model / Stages of Change",cat:"Behavior Change (Clinical/Applied)",year:1983,author:"James Prochaska & Carlo DiClemente",catKey:"Behavior",
-overview:"Change is not an event but a process through six stages: Precontemplation → Contemplation → Preparation → Action → Maintenance → Termination. Relapse is normal and cyclical. Effective interventions match the person's current stage rather than assuming readiness.",
-history:"Developed during a 1983 smoking cessation study at the University of Rhode Island. Prochaska began integrating psychotherapy systems in 1977. It revolutionized clinical practice by replacing 'ready or not' thinking with stage-matched counseling.",
-citation:"Prochaska, J. O., & DiClemente, C. C. (1983). Stages and processes of self-change of smoking. Journal of Consulting and Clinical Psychology, 51(3), 390–395. Prochaska, J. O., & Velicer, W. F. (1997). American Journal of Health Promotion, 12(1), 38–48.",
-pros:["Stage-matching improves engagement and intervention effectiveness","Normalizes relapse as part of the process rather than failure","Applicable across addictions, health behaviors, and organizational change"],
-cons:["Stage boundaries are arguably arbitrary — change is probably continuous","Some meta-analyses show weak support for stage-matched vs. non-matched interventions","Often simplified to the stages alone, losing the processes-of-change and decisional balance components"],
-notes:"A 2009 British Journal of Health Psychology paper called it 'arguably the dominant model of health behaviour change' while simultaneously noting it 'attracts exceptional criticism' — both remain true."},
+overview:"Change is a process through six stages: Precontemplation → Contemplation → Preparation → Action → Maintenance → Termination. Relapse is normal. Effective interventions match the person's current stage.",
+history:"Developed during a 1983 smoking cessation study at the University of Rhode Island. Prochaska began integrating psychotherapy systems in 1977, revolutionizing clinical practice by replacing 'ready or not' thinking with stage-matched counseling.",
+methodType:"Cross-Sectional Survey Study (N = 872)",
+methodology:"Prochaska & DiClemente (1983) recruited 872 adults who were actively changing their smoking behavior on their own (self-changers), without formal therapy. Participants from Rhode Island and Houston were classified into five stage groups: Precontemplators (not thinking about quitting), Contemplators (n = 187; thinking about quitting in the next year), Recent Quitters (n = 134; quit within 6 months, action stage), Long-Term Quitters (n = 247; maintained cessation for 6+ months), and Relapsers (n = 104). All completed a validated questionnaire measuring 10 'processes of change' (consciousness raising, self-reevaluation, social liberation, etc.). ANOVA compared process use across stages. Result: 10 processes showed statistically distinct patterns of use across the five stages, supporting the model's stage-specific predictions. Key limitation: cross-sectional design cannot confirm that people progress through stages in the proposed sequence.",
+citation:"Prochaska, J. O., & DiClemente, C. C. (1983). Stages and processes of self-change of smoking. Journal of Consulting and Clinical Psychology, 51(3), 390–395.",
+pros:["Stage-matching improves engagement and intervention effectiveness","Normalizes relapse as part of the process","Applicable across addictions, health behaviors, and organizational change"],
+cons:["Cross-sectional design cannot confirm linear stage progression","Stage boundaries are arguably arbitrary — change is probably continuous","Often reduced to stages alone, losing the processes-of-change and decisional balance components"],
+notes:"A 2009 British Journal of Health Psychology paper called it 'arguably the dominant model of health behaviour change' while also noting it 'attracts exceptional criticism' — both remain true."},
 
 {name:"Health Belief Model (HBM)",cat:"Behavior Change (Clinical/Applied)",year:1952,author:"Hochbaum, Rosenstock & Kegels (USPHS)",catKey:"Behavior",
-overview:"People take health action when they believe: they are personally susceptible, the condition is serious, the proposed action will reduce risk, and benefits outweigh barriers. 'Cues to action' and self-efficacy (added later by Rosenstock, 1988) moderate the process.",
-history:"Developed in the early 1950s by U.S. Public Health Service social psychologists trying to understand why people skipped free tuberculosis screenings. Formalized by Rosenstock (1966) and still widely taught and used in public health.",
-citation:"Rosenstock, I. M. (1966). Why people use health services. Milbank Memorial Fund Quarterly, 44(3), 94–127.",
-pros:["Identifies multiple leverage points for health messaging","Widely applicable and foundational in public health training","Self-efficacy addition meaningfully strengthened predictive power"],
-cons:["Purely cognitive model that underweights emotion, habit, and social norms","Predictive validity is modest in many meta-analyses","Doesn't account for automatic or unintentional behavior"],
+overview:"People take health action when they believe: they are susceptible, the condition is serious, the action reduces risk, and benefits outweigh barriers. 'Cues to action' and self-efficacy moderate the process.",
+history:"Developed in the 1950s by U.S. Public Health Service social psychologists investigating why people skipped free tuberculosis screenings. Formalized by Rosenstock (1966).",
+methodType:"Survey Research (Original) + Meta-Analytic Evidence Base",
+methodology:"The original research by Hochbaum (1958) surveyed 1,200 adults in three U.S. cities about their beliefs regarding tuberculosis and their behavior at free screening clinics. Using a questionnaire measuring perceived susceptibility and perceived benefits, Hochbaum found that 82% of people who scored high on both constructs had taken a chest X-ray voluntarily vs. only 21% of those who scored low on both. This correlation provided the foundational evidence for the model. Janz & Becker's 1984 meta-analysis reviewed 46 HBM studies and found 'perceived barriers' was the most consistently powerful predictor of behavior, followed by 'perceived susceptibility.' Critics note the purely cognitive framework underestimates habit, emotion, and social context.",
+citation:"Rosenstock, I. M. (1966). Why people use health services. Milbank Memorial Fund Quarterly, 44(3), 94–127. Hochbaum, G. M. (1958). Public participation in medical screening programs. DHEW Publication No. 572. U.S. Government Printing Office.",
+pros:["Identifies multiple leverage points for health messaging","Self-efficacy addition meaningfully strengthened predictive power","Foundational in public health training and campaign design"],
+cons:["Purely cognitive — underweights emotion, habit, and social norms","Predictive validity is modest in many meta-analyses (r ≈ 0.15–0.20 for most constructs)","Doesn't account for automatic or unintentional behavior"],
 notes:"Despite its 1950s origins, HBM was used extensively to design COVID-19 vaccine communication campaigns. COM-B and TPB are generally preferred for intervention design today."},
 
 {name:"Theory of Planned Behavior (TPB)",cat:"Behavior Change (Clinical/Applied)",year:1985,author:"Icek Ajzen",catKey:"Behavior",
-overview:"Behavior is best predicted by Intention, which is shaped by: Attitude (personal evaluation of the behavior), Subjective Norms (perceived social pressure), and Perceived Behavioral Control (belief in one's ability). PBC also directly predicts behavior.",
-history:"An extension of Fishbein & Ajzen's Theory of Reasoned Action (TRA, 1975), which lacked the ability component. One of social psychology's most tested theories, with thousands of published applications in health, environment, consumer research, and organizational behavior.",
+overview:"Behavior is predicted by Intention, shaped by: Attitude (personal evaluation), Subjective Norms (perceived social pressure), and Perceived Behavioral Control (belief in ability). PBC also directly predicts behavior.",
+history:"An extension of Fishbein & Ajzen's Theory of Reasoned Action (1975), adding Perceived Behavioral Control. One of social psychology's most tested theories with thousands of published applications.",
+methodType:"Questionnaire Survey / Meta-Analytic Validation",
+methodology:"TPB research follows a standard survey methodology: participants complete validated Likert-scale questionnaires measuring Attitude, Subjective Norms, and PBC about a specific target behavior. Regression analyses test whether these three predictors explain variance in Intention, and whether Intention (+ PBC) predicts subsequent behavior. Ajzen's (1991) original presentation synthesized prior TRA studies and presented new analyses across multiple behavioral domains. The most comprehensive meta-analysis by Armitage & Conner (2001) across 185 studies found the TPB explained 39% of variance in intention and 27% of variance in behavior — substantial by social psychology standards. The intention-behavior gap (strong intentions often not acted on) is consistently documented.",
 citation:"Ajzen, I. (1991). The theory of planned behavior. Organizational Behavior and Human Decision Processes, 50(2), 179–211.",
-pros:["Strong meta-analytic support — intention reliably predicts behavior","Actionable: each component (attitude, norm, PBC) suggests a specific intervention","Comprehensive enough to explain cross-person variance in same-situation behavior"],
-cons:["Substantial intention-behavior gap: people often fail to act on strong intentions","Doesn't model habitual, automatic, or emotionally-driven behavior well","Static snapshot — doesn't capture change processes over time"],
-notes:"Gollwitzer's Implementation Intentions were developed explicitly to close the intention-behavior gap that TPB clearly identified but couldn't bridge — they're a logical complement to TPB."},
+pros:["Strong meta-analytic support — intention reliably predicts behavior (r ≈ 0.47)","Actionable — each of the three components suggests a specific intervention","Widely used across health, environmental, consumer, and organizational research"],
+cons:["Substantial intention-behavior gap: intentions frequently go unacted upon","Doesn't model habitual, automatic, or emotionally-driven behavior well","Static snapshot — doesn't capture change processes over time"],
+notes:"Gollwitzer's Implementation Intentions were developed explicitly to close the intention-behavior gap that TPB clearly identified but couldn't bridge — the two models are natural complements."},
 
 {name:"Social Cognitive Theory (SCT)",cat:"Behavior Change (Clinical/Applied)",year:1977,author:"Albert Bandura",catKey:"Behavior",
-overview:"Behavior is determined by triadic reciprocal causation between Personal factors (cognition, emotion), Behavior, and Environment. Self-efficacy — belief in one's capacity to execute a specific behavior — is the central predictive mechanism. Learning occurs through observation.",
-history:"Bandura's Bobo doll experiments (1961–65) showed children imitated adult aggression without reinforcement, challenging behaviorism. Social Learning Theory (1977) evolved into Social Cognitive Theory (1986) with greater emphasis on self-efficacy and self-regulation.",
-citation:"Bandura, A. (1977). Social Learning Theory. Prentice Hall. Bandura, A. (1986). Social Foundations of Thought and Action. Prentice Hall.",
-pros:["Self-efficacy is among the most predictive variables in behavior change across domains","Integrates cognitive, behavioral, and environmental factors coherently","Mastery experiences, modeling, and verbal persuasion give clear intervention targets"],
-cons:["Full triadic causation model is complex to apply practically","Self-efficacy is often domain-specific, limiting generalizability","Doesn't fully account for unconscious, habitual, or automatic behavior"],
-notes:"Bandura is one of psychology's most-cited researchers. Self-efficacy measures are now standard instruments in health psychology, educational research, and organizational behavior."},
+overview:"Behavior is determined by triadic reciprocal causation between Personal factors (cognition, emotion), Behavior, and Environment. Self-efficacy — belief in one's capacity to execute a specific behavior — is the central predictive mechanism.",
+history:"Bandura's Bobo doll experiments (1961–65) showed children imitated adult aggression without reinforcement, challenging behaviorism. Social Learning Theory (1977) evolved into Social Cognitive Theory (1986) with greater emphasis on self-efficacy.",
+methodType:"Controlled Laboratory Experiment (Children, Stanford Nursery)",
+methodology:"The foundational Bobo doll experiment (1961): 72 children (36 boys, 36 girls, ages 37–69 months) from Stanford University Nursery School. Children were pre-tested for baseline aggression by two independent observers using four 5-point rating scales (matched pairs design for equivalence across conditions). Three groups: (1) Observed an adult model physically and verbally aggress against an inflatable Bobo doll (mallet strikes, kicks, verbal phrases like 'Sock him!'); (2) Observed a non-aggressive adult model (played quietly with Tinker Toys); (3) No model (control). Children were then mildly frustrated (shown attractive toys they couldn't play with) before being placed in a room with the Bobo doll and toys. Observers behind a one-way mirror coded behaviors every 5 seconds across a 20-minute observation period. Children exposed to aggressive models showed significantly higher imitative aggression, with boys showing more than girls, and same-sex models having stronger influence.",
+citation:"Bandura, A. (1977). Social Learning Theory. Prentice Hall. Bandura, A., Ross, D., & Ross, S. A. (1961). Transmission of aggression through imitation of aggressive models. Journal of Abnormal and Social Psychology, 63(3), 575–582.",
+pros:["Self-efficacy is among the most predictive variables in behavior change","Integrates cognitive, behavioral, and environmental factors coherently","Mastery experiences, modeling, and verbal persuasion give clear intervention targets"],
+cons:["Bobo doll's ecological validity was questioned — children may hit the doll specifically because it was designed to be hit","Full triadic model is complex to operationalize practically","Doesn't fully account for unconscious or automatic behavior"],
+notes:"Bandura is one of psychology's most-cited researchers. The 1965 follow-up study demonstrated vicarious reinforcement: children who saw the model rewarded for aggression showed significantly more imitation than those who saw the model punished."},
 
 {name:"COM-B Model",cat:"Behavior Change (Clinical/Applied)",year:2011,author:"Susan Michie, Maartje van Stralen & Robert West",catKey:"Behavior",
-overview:"Behavior requires Capability (physical and psychological skills/knowledge), Opportunity (physical and social environmental enablers), and Motivation (automatic and reflective processes). Diagnosis maps deficits to specific intervention types.",
-history:"Developed at UCL by synthesizing 19 existing behavior change frameworks (1981–2009). The COM-B forms the hub of the Behaviour Change Wheel and was developed to address fragmentation and incompleteness in existing models.",
+overview:"Behavior requires Capability (physical and psychological), Opportunity (physical and social environmental enablers), and Motivation (automatic and reflective). Diagnosing which component is deficient directs intervention selection.",
+history:"Developed at UCL by synthesizing 19 existing behavior change frameworks (1981–2009). The COM-B forms the hub of the Behaviour Change Wheel.",
+methodType:"Systematic Framework Synthesis (Qualitative)",
+methodology:"Michie, van Stralen & West identified 19 published frameworks of behavior change through a systematic literature search. Two researchers independently mapped the components of each framework against a draft taxonomy. Through iterative consensus, they identified that all 19 frameworks could be accommodated within the three COM-B domains (Capability, Opportunity, Motivation), each with two sub-components. No new empirical data were collected — the methodology was systematic qualitative synthesis. The resulting BCW links each COM-B deficit to specific intervention functions and policy categories. Subsequent validation studies tested whether COM-B-based intervention design outperforms non-systematic approaches (mixed results).",
 citation:"Michie, S., van Stralen, M. M., & West, R. (2011). The behaviour change wheel: A new method for characterising and designing behaviour change interventions. Implementation Science, 6, 42.",
 pros:["Systematically derived from synthesis of multiple validated frameworks","Directly links behavior diagnosis to appropriate intervention category","Widely adopted in NHS, clinical trials, and public health policy"],
-cons:["Can produce overly academic analyses disconnected from practical delivery","C/O/M boundaries are fuzzy — the same factor often spans categories","Requires training to use correctly; not immediately accessible to practitioners"],
-notes:"COM-B is particularly powerful when paired with the Behaviour Change Technique Taxonomy (93 named techniques), which specifies the exact active ingredient of each intervention."},
+cons:["Can produce overly academic analyses disconnected from practical delivery","C/O/M boundaries are fuzzy — the same factor often spans all three domains","Requires training to use correctly; not immediately accessible to practitioners"],
+notes:"COM-B is most powerful when paired with the Behaviour Change Technique Taxonomy (93 named techniques), which specifies the exact active ingredient of each intervention — moving from 'what to target' to 'what to do.'"},
 
 {name:"Behaviour Change Wheel (BCW)",cat:"Behavior Change (Clinical/Applied)",year:2011,author:"Susan Michie, Maartje van Stralen & Robert West",catKey:"Behavior",
-overview:"A structured method for designing interventions. COM-B sits at the hub. Nine intervention functions ring it (Education, Persuasion, Incentivization, Coercion, Training, Restriction, Environmental Restructuring, Modelling, Enablement). Seven policy categories form the outer ring.",
-history:"Same 2011 paper as COM-B. The BCW synthesized 19 existing frameworks into a coherent, nested structure that moved beyond 'what is wrong with behavior' to 'what specifically can be done and at what level.'",
+overview:"A structured intervention design method. COM-B sits at the hub. Nine intervention functions ring it. Seven policy categories form the outer ring, linking psychological mechanisms to real-world delivery strategies.",
+history:"Same 2011 paper as COM-B. The BCW synthesized 19 existing frameworks into a coherent wheel structure that moved beyond 'what is wrong' to 'what specifically can be done and at which system level.'",
+methodType:"Systematic Qualitative Synthesis (Same as COM-B)",
+methodology:"The BCW was constructed through the same systematic review as COM-B. After establishing the COM-B hub, Michie et al. reviewed the 19 frameworks for their intervention function categories (what intervention mechanisms were proposed) and policy categories (at what level — communication, regulation, service, etc.). The nine intervention functions and seven policy categories emerged from iterative coding and consensus. The wheel structure was designed to show which COM-B deficits map to which intervention functions. Validity was argued through logical coherence and comprehensiveness of coverage across the 19 source frameworks, not through a new empirical trial.",
 citation:"Michie, S., van Stralen, M. M., & West, R. (2011). Implementation Science, 6, 42.",
-pros:["Comprehensive framework: from individual psychological mechanisms to policy levers","Moves practitioners beyond identifying problems to specifying solutions","Widely adopted in public health, NHS, and international health organizations"],
-cons:["Requires significant training to apply correctly and consistently","Risk of analysis paralysis without prioritization guidance","Less evidence on implementation fidelity when practitioners use it unsupported"],
-notes:"The BCW is explicitly a design tool, not a causal model. It describes what can and should be done — the 'how' of intervention — rather than explaining why behavior occurs."},
+pros:["Comprehensive framework: from psychological mechanisms to policy levers","Moves practitioners beyond identifying problems to specifying solutions","Widely adopted in public health, NHS, and international health organizations"],
+cons:["Requires significant training to apply correctly","Risk of analysis paralysis without prioritization guidance","Less evidence on implementation fidelity when used without specialist support"],
+notes:"The BCW is explicitly a design tool, not a causal model. It describes what can be done — the 'how' of intervention — rather than explaining why behavior occurs. This limits its predictive utility."},
 
 {name:"EAST Framework",cat:"Behavior Change (Clinical/Applied)",year:2014,author:"Behavioural Insights Team (BIT)",catKey:"Behavior",
-overview:"Behaviors become more likely when they are Easy (reduce friction, simplify, use defaults), Attractive (use incentives, make salient), Social (leverage norms and networks), and Timely (act at moments of receptiveness). A practitioner-friendly synthesis of nudge principles.",
-history:"Developed by the UK's Behavioural Insights Team as a practical guide for civil servants after years of field trials. Published in 2014 to distill complex behavioral science into a memorable, usable acronym applicable to public services.",
+overview:"Behaviors become more likely when they are Easy (reduce friction), Attractive (use incentives, make salient), Social (leverage norms and networks), and Timely (act at moments of receptiveness). A practitioner-friendly synthesis of nudge principles.",
+history:"Developed by the UK's Behavioural Insights Team ('Nudge Unit') based on field trial experience. Published in 2014 to distill complex behavioral science into a memorable, usable acronym for civil servants.",
+methodType:"Evidence Synthesis from Government RCTs",
+methodology:"EAST is not a research paper but a practitioner guide synthesizing lessons from BIT's portfolio of randomized controlled trials conducted in partnership with UK government departments (2010–2014). Representative trials: (1) Tax compliance: RCT with HMRC adding social norm text to 140,000 letters — 'Most people in your area have paid their taxes on time.' Significantly increased payment rates vs. standard letters. (2) Organ donation: RCT testing different registration page messages led to 96,000+ additional registrations annually. (3) Job application support: adding a specific action prompt to job centre letters increased job-seeking behavior. The EAST acronym organizes these empirical findings into a teachable structure for policymakers.",
 citation:"Service, O., et al. (2014). EAST: Four simple ways to apply behavioural insights. Behavioural Insights Team, London.",
-pros:["Highly memorable and immediately actionable for non-specialists","Based on real government field trials with documented outcomes","Covers major nudge mechanisms within a single, teachable framework"],
-cons:["Simplified to the point of losing theoretical depth and nuance","Not a causal model — lacks the explanatory power of COM-B or TPB","EAST components can conflict in practice (Easy and Attractive may pull in opposite directions)"],
-notes:"The BIT's tax compliance letter experiment — adding 'Most people in your area have already paid' — increased payments significantly. Classic EAST: Social + Timely (year-end deadline)."},
+pros:["Highly memorable and immediately actionable for non-specialists","Based on real government RCTs with documented outcomes","Covers major nudge mechanisms within a single teachable framework"],
+cons:["Simplified to the point of losing theoretical depth and nuance","Not a causal model — lacks explanatory power of COM-B or TPB","EAST components can conflict in practice (Easy vs. Attractive may point in different directions)"],
+notes:"The BIT's tax letter experiment — adding 'Most people in your area have already paid' — increased compliance significantly. Classic EAST: Social (norm) + Timely (deadline context)."},
 
 {name:"Operant Conditioning",cat:"Reinforcement & Conditioning",year:1938,author:"B.F. Skinner",catKey:"Reinforcement",
-overview:"Behavior is shaped by its consequences. Positive reinforcement (add reward), negative reinforcement (remove aversive), positive punishment (add aversive), negative punishment (remove reward) each systematically alter behavior frequency. Schedules of reinforcement determine persistence.",
-history:"Skinner built on Thorndike's Law of Effect (1911), formalizing operant conditioning in The Behavior of Organisms (1938). His Skinner Box became an iconic research tool. He extended his framework to 'radical behaviorism' — denying mental states explanatory power.",
+overview:"Behavior is shaped by its consequences. Positive reinforcement (add reward), negative reinforcement (remove aversive stimulus), positive punishment (add aversive), and negative punishment (remove reward) each alter behavior frequency systematically.",
+history:"Skinner built on Thorndike's Law of Effect (1911), formalizing operant conditioning in The Behavior of Organisms (1938). The Skinner Box became an iconic research tool enabling precise measurement of behavior.",
+methodType:"Animal Laboratory Experiments (Operant Chambers)",
+methodology:"Skinner designed the operant chamber (Skinner Box): a soundproof box containing a lever (or key for pigeons), a food dispenser, a speaker, and a light. Rats or pigeons were food-deprived (typically 80% of normal body weight) then placed in the box. When the animal pressed the lever, a food pellet was dispensed according to different reinforcement schedules. A cumulative recorder measured pressing rates in real-time (slope = rate). This precise, controlled setup allowed Skinner to document the behavioral signature of each schedule: fixed ratio produces a 'post-reinforcement pause'; variable ratio produces steady high rates; fixed interval produces a 'scallop' pattern; variable interval produces steady moderate rates. Thousands of such experiments across species established the robustness of these patterns.",
 citation:"Skinner, B. F. (1938). The Behavior of Organisms: An Experimental Analysis. Appleton-Century-Crofts.",
-pros:["Empirically extremely robust across species and millennia of study","Foundation of applied behavior analysis (ABA) and behavior therapy","Direct, practical tools for training, education, and behavior modification"],
-cons:["Ignores cognitive processes, meaning-making, and subjective experience","Ethical concerns about control, manipulation, and dehumanization","External reinforcement can undermine intrinsic motivation (undermining/overjustification effect)"],
-notes:"The most common misconception: negative reinforcement (which increases behavior) is confused with punishment (which decreases it). Negative reinforcement strengthens behavior by removing something aversive."},
+pros:["Empirically extremely robust across species and contexts","Foundation of applied behavior analysis (ABA) and behavior therapy","Direct, practical tools for training, education, and environment design"],
+cons:["Ignores cognitive processes, meaning-making, and subjective experience","External reinforcement can undermine intrinsic motivation (undermining effect)","Ethical concerns about control and the reduction of behavior to mechanics"],
+notes:"The most common misconception: negative reinforcement is confused with punishment. Negative reinforcement removes something aversive to increase a behavior. Punishment decreases behavior. They are opposites."},
 
 {name:"Classical Conditioning",cat:"Reinforcement & Conditioning",year:1927,author:"Ivan Pavlov",catKey:"Reinforcement",
-overview:"A neutral stimulus repeatedly paired with an unconditioned stimulus acquires the ability to elicit a conditioned response on its own. Learning through association. Foundation of acquired fears, cravings, emotional responses, and environmental triggers.",
-history:"Pavlov discovered it accidentally during digestive research on dogs in the late 1890s. His 1927 book systematized the findings. Watson applied it to humans with the Little Albert experiment (1920) — deeply unethical, now widely cited as a cautionary tale in research ethics.",
+overview:"A neutral stimulus repeatedly paired with an unconditioned stimulus acquires the ability to elicit a conditioned response on its own. Learning through temporal association. Foundation of acquired fears, cravings, and emotional triggers.",
+history:"Pavlov discovered it accidentally during digestive research on dogs in the late 1890s. His 1927 book systematized the findings. Watson applied it to human emotion with the Little Albert experiment (1920).",
+methodType:"Animal Physiology Experiment (Surgical / Kymograph Measurement)",
+methodology:"Pavlov surgically implanted a small tube (fistula) in dogs' salivary glands, allowing saliva to be diverted from the throat into a measuring container. Dogs were secured in harnesses in soundproof rooms to minimize extraneous stimulation. Procedure: a conditioned stimulus (metronome, bell, light, or touch on leg) was presented, followed 0.5–5 seconds later by meat powder placed in the dog's mouth (the unconditioned stimulus). Saliva volume was recorded on a rotating drum kymograph, allowing real-time measurement of response magnitude. After repeated pairings (typically 10–20 trials), the CS alone elicited salivation. Pavlov then systematically varied CS–UCS timing, interstimulus intervals, and stimulus generalization to map the parameters of conditioning, extinction, and spontaneous recovery.",
 citation:"Pavlov, I. P. (1927). Conditioned Reflexes: An Investigation of the Physiological Activity of the Cerebral Cortex. Oxford University Press.",
-pros:["One of the most replicated phenomena in all of science","Foundation of exposure therapy for phobias and anxiety disorders","Explains the acquisition of cravings, emotional associations, and environmental triggers"],
-cons:["Doesn't account adequately for voluntary, goal-directed behavior","Extinction is fragile — conditioned responses return under stress (spontaneous recovery)","Watson's Little Albert study is now considered profoundly unethical"],
-notes:"Extinction doesn't erase the original association — it creates a competing inhibitory pathway. This is why cravings, phobias, and PTSD triggers return under stress after apparent remission."},
+pros:["One of the most replicated phenomena in all of science","Foundation of exposure therapy for phobias and anxiety disorders","Explains acquisition of cravings, emotional associations, and environmental triggers"],
+cons:["Doesn't account adequately for voluntary, goal-directed behavior","Extinction is fragile — conditioned responses return under stress (spontaneous recovery)","Watson's Little Albert study (1920) is now considered deeply unethical — no debriefing or deconditioned attempted"],
+notes:"Extinction doesn't erase the original association — it creates a competing inhibitory pathway. This is why cravings, phobias, and PTSD triggers return under stress after apparent remission (spontaneous recovery)."},
 
 {name:"Variable Reward Schedules",cat:"Reinforcement & Conditioning",year:1957,author:"B.F. Skinner",catKey:"Reinforcement",
-overview:"Reinforcement schedules determine the persistence and rate of behavior. Variable ratio (reward after an unpredictable number of responses) produces the highest, most persistent response rates and the greatest resistance to extinction. This schedule underlies slot machines, social media feeds, and compulsive behaviors.",
-history:"Skinner mapped all four reinforcement schedules (fixed ratio, variable ratio, fixed interval, variable interval) in Schedules of Reinforcement (1957). Variable ratio emerged as the most powerful for creating persistent, high-frequency behavior.",
+overview:"Variable ratio schedules (reward after unpredictable numbers of responses) produce the highest and most persistent response rates, and the greatest resistance to extinction. This underlies slot machines, social media feeds, and compulsive checking.",
+history:"Skinner mapped all four reinforcement schedules in Schedules of Reinforcement (1957) with Charles Ferster. Variable ratio emerged as the most powerful schedule for creating persistent behavior.",
+methodType:"Animal Laboratory Experiments (Operant Chamber, Pigeons & Rats)",
+methodology:"Ferster & Skinner (1957) conducted thousands of sessions in operant chambers with pigeons and rats. Each schedule was implemented by programming the food dispenser to deliver pellets according to different rules. For variable ratio (VR): the food pellet was delivered after a randomly varying number of responses (VR-10 = average 10 responses per pellet; VR-50 = average 50). Cumulative response records showed VR schedules produced the steepest, most consistent slopes (highest response rates) compared to all other schedules. Extinction tests showed VR-trained animals persisted far longer without reward than fixed schedule animals. These studies also documented the 'extinction burst' — a temporary increase in responding when reinforcement first stops — before eventual extinction.",
 citation:"Ferster, C. B., & Skinner, B. F. (1957). Schedules of Reinforcement. Appleton-Century-Crofts.",
-pros:["Most effective schedule for building persistent, high-frequency behavior","Explains compulsive technology use without requiring complex cognitive theory","Foundation of gamification design and behavior retention in products"],
-cons:["Creates behavior highly resistant to extinction — easily maladaptive","Actively exploited by gambling and app designers against users' long-term interests","Doesn't distinguish adaptive persistence from compulsion or addiction"],
-notes:"Twitter's pull-to-refresh was explicitly designed as a slot machine mechanic by Loren Brichter. He has publicly expressed regret. Instagram's non-chronological feed exploits the same mechanism."},
+pros:["Most effective schedule for building persistent, high-frequency behavior","Explains compulsive technology use without requiring complex cognitive theory","Foundation of gamification design and behavior retention"],
+cons:["Creates behavior highly resistant to extinction — easily becomes maladaptive","Exploited by gambling and app designers against users' long-term interests","Doesn't distinguish adaptive persistence from compulsion or addiction"],
+notes:"Twitter's pull-to-refresh was explicitly designed as a slot machine mechanic by Loren Brichter. He has publicly expressed regret. Instagram's non-chronological feed exploits the same schedule deliberately."},
 
 {name:"Premack Principle",cat:"Reinforcement & Conditioning",year:1959,author:"David Premack",catKey:"Reinforcement",
-overview:"A more probable (preferred) behavior can reinforce a less probable (less preferred) behavior. 'First work, then play.' More precisely: any high-frequency behavior can serve as a reinforcer for a low-frequency behavior — no external reward is required.",
-history:"Premack proposed this in 1959, challenging Skinner's stimulus-based account of reinforcement and shifting it to a relationship between behavioral probabilities. Timberlake & Allison (1974) later showed the relationship isn't always symmetrical.",
+overview:"A more probable (preferred) behavior can reinforce a less probable (less preferred) behavior. Any high-frequency behavior can serve as a reinforcer for a low-frequency behavior — no external reward is required.",
+history:"Premack proposed this in 1959, challenging Skinner's stimulus-based account. Timberlake & Allison (1974) later showed the relationship isn't always symmetrical.",
+methodType:"Animal Laboratory Experiments (Contingency Analysis)",
+methodology:"Premack (1959) measured baseline behavioral probabilities in rats: in a given free-choice period, how much time did each rat spend running in a wheel versus drinking water? This established each animal's preference hierarchy. He then made access to the higher-probability behavior (e.g., running) contingent on first performing the lower-probability behavior (drinking). Result: the lower-probability behavior (drinking) increased above baseline. In a separate condition, rats who preferred drinking had their access to drinking made contingent on running — and running increased. He demonstrated the principle was bidirectional as long as the contingent behavior had a higher baseline probability. Later extensions showed the principle applied to humans in educational contexts ('first work, then play').",
 citation:"Premack, D. (1959). Toward empirical behavior laws: I. Positive reinforcement. Psychological Review, 66(4), 219–233.",
-pros:["Doesn't require external rewards — uses the person's own behavioral preferences","Practical and self-administered: identify your own high-frequency behaviors","Directly applicable in child behavior management and adult habit design"],
-cons:["Determining response probabilities in advance is rarely practical outside the lab","Context-dependent — preferences and probabilities shift constantly","Timberlake & Allison showed the constraint can work in both directions — complicating simple application"],
-notes:"James Clear's habit stacking and Nir Eyal's temptation bundling are both applied derivatives of the Premack Principle. You earn the high-frequency behavior by completing the low-frequency one."},
+pros:["Doesn't require external rewards — uses the person's own preferences","Practical and self-administered","Directly applicable in child behavior management and adult habit design"],
+cons:["Determining response probabilities in advance is rarely practical outside the lab","Context-dependent — preferences and probabilities shift constantly","Timberlake & Allison (1974) showed the symmetric version has exceptions under resource constraint"],
+notes:"Clear's habit stacking ('After I pour my morning coffee, I will meditate for one minute') and Eyal's temptation bundling are both applied derivatives of the Premack Principle."},
 
 {name:"Identity-Based Habits",cat:"Identity & Values",year:2018,author:"James Clear",catKey:"Identity",
-overview:"The most durable behavior change comes from shifting identity, not just outcomes or processes. 'I am a runner' is more powerful than 'I want to run a marathon.' Each action becomes a vote for the identity. Habits are the evidence you use to prove your identity to yourself.",
+overview:"The most durable behavior change comes from shifting identity, not just outcomes or processes. 'I am a runner' is more powerful than 'I want to run a marathon.' Each action is a vote for the identity you wish to embody.",
 history:"Clear synthesized identity research (William James, social identity theory, Stryker's identity theory) into a practical behavior-change layer in Atomic Habits (2018). He places identity as the foundational layer beneath all other habit loop mechanics.",
+methodType:"Conceptual Synthesis (No Original Experiment)",
+methodology:"No original empirical study. Clear synthesized research from social psychology (social identity theory, identity-based self-regulation literature), William James's writings on habit, and cognitive psychology. The identity-as-foundation argument draws on existing evidence that identity-consistent behaviors are more persistent (e.g., Bryan et al., 2011, showing that framing health behaviors as 'being a healthy person' rather than 'eating healthily' increased compliance in an RCT). Clear builds a conceptual framework connecting this evidence to practical habit advice through journalistic synthesis and personal interviews, not a controlled study.",
 citation:"Clear, J. (2018). Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones. Avery/Penguin.",
-pros:["Provides intrinsic motivation that outlasts external rewards","Reframes setbacks as inconsistencies with identity rather than personal failures","Shifts the fundamental question from 'what do I want' to 'who am I'"],
-cons:["Strong identity can create rigidity — making identity-threatening change harder later","Not empirically tested as a distinct causal mechanism independent of behavior","Identity adoption can be superficial and fragile without accompanying behavioral evidence"],
-notes:"This conceptually overlaps with Erikson's identity development theory and Stryker's sociological identity theory — neither of which Clear cites, though the intuitions align."},
+pros:["Provides intrinsic motivation that outlasts external rewards","Shifts the question from 'what do I want' to 'who am I'","Reframes setbacks as inconsistencies with identity rather than personal failures"],
+cons:["Not empirically tested as a distinct causal mechanism independent of behavior","Strong identity can create rigidity — making identity-threatening change harder later","Identity adoption can be superficial without accompanying behavioral evidence"],
+notes:"Bryan et al. (2011) conducted an RCT showing children asked 'to be a helper' (noun/identity frame) vs. 'to help' (verb/action frame) showed significantly higher prosocial behavior — direct empirical support for the identity-behavior link."},
 
 {name:"Acceptance & Commitment Therapy (ACT) Values",cat:"Identity & Values",year:1999,author:"Steven Hayes",catKey:"Identity",
-overview:"Sustainable behavior change comes from clarifying personal values and committing to values-consistent action, even in the presence of difficult thoughts and feelings. Rather than fighting unwanted cognitions, ACT develops psychological flexibility and values-based living through six core processes.",
-history:"Hayes developed ACT at the University of Nevada in the late 1980s–90s based on Relational Frame Theory (RFT). Published in 1999, it represents the 'third wave' of CBT, moving beyond symptom reduction toward meaning, values, and psychological flexibility.",
-citation:"Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (1999). Acceptance and Commitment Therapy: An Experiential Approach to Behavior Change. Guilford Press.",
-pros:["Rapidly growing empirical evidence base, especially for chronic pain, anxiety, and depression","Addresses the 'why' of behavior at a deep, lasting level","Reduces resistance by accepting rather than fighting difficult internal experiences"],
-cons:["Values clarification can be difficult, time-consuming, and emotionally demanding","Less actionable for quick, situational behavior interventions","Some ACT exercises are abstract and require skilled facilitation to land properly"],
-notes:"RFT (Relational Frame Theory), ACT's theoretical backbone, is what distinguishes it from other therapies. Behavior is understood through language and cognition, not just conditioning or cognitive restructuring."},
+overview:"Sustainable behavior change comes from clarifying personal values and committing to values-consistent action even in the presence of difficult thoughts and feelings. ACT develops psychological flexibility through six core processes rather than symptom reduction.",
+history:"Hayes developed ACT at the University of Nevada in the late 1980s–90s based on Relational Frame Theory (RFT). Published in 1999, it represents the 'third wave' of CBT, moving beyond symptom reduction toward meaning and values.",
+methodType:"Randomized Controlled Trials (Clinical Psychology)",
+methodology:"ACT research follows standard clinical RCT methodology: participants with a specific condition (chronic pain, anxiety, depression, OCD) are randomly assigned to ACT vs. a control condition (waitlist, treatment-as-usual, or cognitive therapy). Outcome measures include validated symptom questionnaires (e.g., PHQ-9 for depression, GAF for functioning), plus ACT-specific measures of psychological flexibility (Acceptance and Action Questionnaire — AAQ). Follow-up periods typically range 3–12 months. Hayes et al. (2006) conducted the first comprehensive review of 32 RCTs, finding ACT outperformed control conditions across multiple disorders, particularly chronic pain and work stress. The Psychological Flexibility construct (measured by the AAQ) consistently mediates outcomes across studies — providing a mechanistic test of the theory.",
+citation:"Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (1999). Acceptance and Commitment Therapy. Guilford Press. Hayes, S. C., et al. (2006). Acceptance and commitment therapy: Model, processes and outcomes. Behaviour Research and Therapy, 44(1), 1–25.",
+pros:["Rapidly growing RCT evidence base across multiple disorders","Addresses the 'why' of behavior at a deep, lasting level","Psychological Flexibility construct has been mechanistically tested as a mediator"],
+cons:["Values clarification can be difficult and emotionally demanding","Less actionable for quick situational behavior interventions","Some exercises require skilled facilitation to land effectively"],
+notes:"RFT (Relational Frame Theory), ACT's theoretical backbone, is what distinguishes it from other therapies. Language and cognition are understood as learned behavior, not just cognitive content to be restructured."},
 
 {name:"Self-Concept Theory",cat:"Identity & Values",year:1959,author:"Carl Rogers",catKey:"Identity",
-overview:"People have a self-concept (how they see themselves) and an ideal self (how they wish to be). Incongruence between them creates anxiety and motivates defensive behavior. Change requires a psychologically safe environment where the gap can be honestly acknowledged and narrowed.",
-history:"Rogers developed his humanistic theory in Client-Centered Therapy (1951) and formalized it in A Theory of Personality (1959). It was a direct challenge to both Freudian determinism and Skinnerian behaviorism, centering subjective experience as the key unit of analysis.",
+overview:"People have a self-concept (how they see themselves) and an ideal self (how they wish to be). Incongruence between them creates anxiety. Behavior is motivated to reduce this gap, or to defend the existing self-concept through denial.",
+history:"Rogers developed his humanistic theory in Client-Centered Therapy (1951) and A Theory of Personality (1959), a direct challenge to both Freudian determinism and Skinnerian behaviorism.",
+methodType:"Clinical Observation + Q-Sort Methodology",
+methodology:"Rogers and his students developed the Q-sort methodology to operationalize self-concept: participants sort 100 cards with self-descriptive statements (e.g., 'I am a likeable person') into a forced-normal distribution from 'most like me' to 'least like me.' Two Q-sorts were conducted — one for current self, one for ideal self. The correlation between the two distributions provided a measure of self-concept incongruence (higher correlation = less incongruence). Butler & Haigh (1954) used Q-sort methodology in a pre-post design with client-centered therapy: patients showed significantly greater self/ideal correlation after therapy compared to a waitlist control, suggesting therapy reduced incongruence. Rogers also published verbatim therapy transcripts (e.g., the 'Gloria' session) as qualitative case evidence.",
 citation:"Rogers, C. R. (1959). A theory of therapy, personality, and interpersonal relationships. In S. Koch (Ed.), Psychology: A Study of a Science, Vol. 3 (pp. 184–256). McGraw-Hill.",
-pros:["Centers subjective experience and personal meaning — what other models omit","Explains defensive behavior and resistance to change as self-concept protection","Foundation for person-centered counseling, empathy-based interventions, and unconditional positive regard"],
-cons:["Difficult to operationalize and rigorously test empirically","Self-concept measurement is inherently subjective","Doesn't explain behavior driven primarily by external contingencies or unconscious drives"],
-notes:"'Unconditional positive regard' as Rogers' therapeutic mechanism is conceptually linked to research showing that contingent self-worth — liking yourself only when you succeed — destabilizes identity and undermines change."},
+pros:["Centers subjective experience and personal meaning","Explains defensive behavior and resistance to change as self-concept protection","Foundation for person-centered counseling and unconditional positive regard"],
+cons:["Hard to operationalize and test with strong experimental controls","Self-concept measurement via Q-sort is subjective and context-sensitive","Doesn't explain behavior driven primarily by external contingencies"],
+notes:"'Unconditional positive regard' as Rogers' therapeutic mechanism is related to research showing contingent self-worth — liking yourself only when you succeed — destabilizes identity and undermines long-term change."},
 
 {name:"Social Learning Theory",cat:"Social & Environmental",year:1977,author:"Albert Bandura",catKey:"Social",
-overview:"People learn behaviors by observing models, retaining the behavior, reproducing it when capable, and being motivated to do so (vicarious reinforcement). Behavior is acquired without direct reinforcement to the learner. Social context is the curriculum.",
-history:"Bandura's Bobo doll studies (1961–65) demonstrated children imitated adult violence without reward, directly challenging behaviorism. Formalized as Social Learning Theory (1977), later expanded into Social Cognitive Theory (1986) by adding self-efficacy and self-regulation.",
-citation:"Bandura, A. (1977). Social Learning Theory. Prentice-Hall.",
-pros:["Explains behavior acquisition through observation — no direct reward required","Foundation for media influence research, peer modeling interventions, and therapeutic modeling","Vicarious reinforcement mechanism is empirically validated across species"],
-cons:["Doesn't fully explain why some models are imitated and others are not","Cognitive and emotional mediators complicate behavioral prediction","Cultural variations in modeling norms and social hierarchy are underexplored"],
-notes:"Social Learning Theory justifies why role models, peer coaches, celebrity health behavior, and documentary depictions of violence all have measurable downstream behavior effects."},
+overview:"People learn behaviors by observing models, retaining the behavior, reproducing it when capable, and being motivated to do so. Behavior is acquired without direct reinforcement to the learner.",
+history:"Bandura's Bobo doll studies (1961–65) demonstrated observational learning without reinforcement. Formalized as Social Learning Theory (1977), later expanded into Social Cognitive Theory (1986).",
+methodType:"Controlled Laboratory Experiments (see Social Cognitive Theory entry)",
+methodology:"The foundational Bobo doll experiments are the same as those described under Social Cognitive Theory. The 1965 follow-up study specifically tested vicarious reinforcement: 66 children (33M, 33F) were randomly assigned to watch a film in which the adult model was (a) rewarded with candy and praise for aggressing the Bobo doll, (b) punished with a spanking and verbal reprimand, or (c) experienced no consequences. Children in the rewarded-model condition showed significantly more imitative aggression than those in the punished condition (who showed least). Critically, when all children were offered incentives to reproduce the model's behaviors, differences between conditions largely disappeared — showing children in all conditions had learned the behavior but differed in performance motivation (a key distinction between acquisition and performance).",
+citation:"Bandura, A. (1977). Social Learning Theory. Prentice-Hall. Bandura, A. (1965). Influence of models' reinforcement contingencies on the acquisition of imitative responses. Journal of Personality and Social Psychology, 1(6), 589–595.",
+pros:["Explains behavior acquisition through observation without direct reward","Foundation for media influence research, peer modeling, and therapeutic modeling","Vicarious reinforcement mechanism is empirically validated"],
+cons:["Doesn't fully explain why some models are imitated and others are not","Ecological validity of Bobo doll studies is questioned (the doll was designed to be hit)","Cultural variations in modeling norms and social hierarchy are underexplored"],
+notes:"The acquisition vs. performance distinction from the 1965 study is theoretically crucial: children knew how to behave aggressively regardless of the model's consequences — only their willingness to do so varied."},
 
 {name:"Diffusion of Innovations",cat:"Social & Environmental",year:1962,author:"Everett Rogers",catKey:"Social",
-overview:"New ideas and behaviors spread through populations via a predictable S-curve across five adopter categories: Innovators (2.5%) → Early Adopters (13.5%) → Early Majority (34%) → Late Majority (34%) → Laggards (16%). Adoption is influenced by relative advantage, compatibility, complexity, trialability, and observability.",
-history:"Rogers synthesized hundreds of diffusion studies across agriculture, medicine, and education in Diffusion of Innovations (1962). It is the second most-cited book in social science and remains foundational to technology adoption, public health, and organizational change.",
+overview:"New ideas and behaviors spread through populations via a predictable S-curve across five adopter categories: Innovators (2.5%) → Early Adopters (13.5%) → Early Majority (34%) → Late Majority (34%) → Laggards (16%). Five attributes predict adoption rate.",
+history:"Rogers synthesized hundreds of diffusion studies in Diffusion of Innovations (1962). It is the second most-cited book in social science and remains foundational to technology adoption and public health.",
+methodType:"Meta-Analysis / Literature Synthesis of ~2,000 Studies",
+methodology:"Rogers's method was systematic literature review and meta-analysis of empirical diffusion research across multiple fields. He began by reviewing 506 publications across hybrid corn adoption (agricultural extension), new medical drugs (physician adoption), and educational innovations. From these, he extracted common patterns: adopter distributions consistently followed an S-curve; adopter categories could be defined statistically (innovators = first 2.5% SD+; early adopters = next 13.5%, etc.); and five attributes (relative advantage, compatibility, complexity, trialability, observability) consistently predicted adoption rate across studies. By the 5th edition (2003), the review covered approximately 5,200 studies. No single controlled experiment — the model emerges from meta-pattern recognition across diverse natural adoption processes.",
 citation:"Rogers, E. M. (1962). Diffusion of Innovations (5th ed., 2003). Free Press.",
-pros:["S-curve adoption model is empirically robust across many domains","Identifies the five factors that predict whether innovations spread","Directly applicable to product launch strategy and public health campaign design"],
-cons:["Adopter categories are rough approximations with fuzzy empirical boundaries","Doesn't adequately address structural and systemic barriers to adoption","Can justify targeting only early adopters, leaving hard-to-reach populations unserved"],
-notes:"Geoffrey Moore's 'chasm' (1991) — the gap between Early Adopters and Early Majority — identified as the common failure point for technology products, extends Rogers' framework into product strategy."},
+pros:["S-curve adoption model is empirically robust across many domains","Identifies five attributes that predict whether innovations spread","Directly applicable to product launch strategy and public health campaign design"],
+cons:["Adopter categories are rough approximations with fuzzy empirical boundaries","Doesn't adequately address structural, systemic, or economic barriers to adoption","Can justify targeting only early adopters, leaving hard-to-reach populations unserved"],
+notes:"Geoffrey Moore's 'chasm' (1991) — the gap between Early Adopters and Early Majority — identified a common failure point for technology products, extending Rogers' framework into product strategy."},
 
 {name:"Social Norms Theory",cat:"Social & Environmental",year:1986,author:"H. Wesley Perkins & Alan Berkowitz",catKey:"Social",
 overview:"Behavior is strongly influenced by perceived norms — what 'people like me' do or approve. Misperceptions of norms (believing peers drink/use drugs more than they do) drive behavior toward the misperceived norm. Correcting misperceptions can shift behavior.",
-history:"Perkins & Berkowitz developed the theory while studying college alcohol use. Students dramatically overestimated peer drinking, and that overestimation drove their own behavior. Social norms marketing campaigns in colleges followed.",
+history:"Perkins & Berkowitz developed the theory while studying college alcohol use. Students dramatically overestimated peer drinking, and that overestimation drove their own behavior.",
+methodType:"Survey Research + Social Norms Marketing RCTs",
+methodology:"Perkins & Berkowitz (1986) surveyed students at Hobart and William Smith Colleges about their own alcohol use and their perception of typical student drinking. Results showed students consistently overestimated peer consumption by significant margins. This misperception correlated with higher personal alcohol consumption. Social norms intervention methodology (Haines, 1996; Perkins, 2003): campuses were assigned to receive a social norms marketing campaign (correcting misperceptions with factual normative data, e.g., 'Most HWS students have 0–4 drinks when they party') delivered through posters, newsletters, and university media over 1–3 years. Pre-post survey comparisons showed reduced misperceptions and reduced self-reported drinking. More rigorous RCT designs (DeJong et al., 2006) found more modest effects, raising questions about generalizability.",
 citation:"Perkins, H. W., & Berkowitz, A. D. (1986). Perceiving the community norms of alcohol use among students. International Journal of the Addictions, 21(9–10), 961–976.",
-pros:["Norm correction campaigns have documented effectiveness for alcohol and drug use reduction","Simple and scalable: sharing accurate norm data is the intervention","Integrates naturally with Nudge Theory and EAST's Social component"],
-cons:["Correcting misperceptions doesn't always reliably change behavior","Boomerang effect: if actual norm is lower than believed, correction can increase the behavior","Injunctive norms (approval) and descriptive norms (frequency) must be carefully managed separately"],
-notes:"Schultz et al. (2007) showed that adding an injunctive norm (smiley face for below-average energy users) prevented the boomerang effect in energy conservation — a critical design lesson."},
+pros:["Norm correction campaigns have documented effectiveness for alcohol/drug use reduction","Simple and scalable: sharing accurate norm data is the core intervention","Integrates naturally with Nudge Theory and EAST's Social component"],
+cons:["Boomerang effect: correcting misperceptions can increase behavior if actual norm was lower than believed","RCT evidence is more modest than earlier quasi-experimental findings suggested","Injunctive norms (what's approved) and descriptive norms (what people actually do) must be managed separately"],
+notes:"Schultz et al. (2007) showed adding an injunctive norm (a smiley face for below-average energy users) to a descriptive norm comparison prevented the boomerang effect — a critical design lesson for norm interventions."},
 
 {name:"Ecological Systems Theory",cat:"Social & Environmental",year:1979,author:"Urie Bronfenbrenner",catKey:"Social",
-overview:"Human behavior is shaped by nested environmental systems: Microsystem (immediate relationships) → Mesosystem (interactions between microsystems) → Exosystem (indirect contexts) → Macrosystem (culture, laws, values) → Chronosystem (change over time). Change at any level ripples through others.",
-history:"Proposed in The Ecology of Human Development (1979), Bronfenbrenner shifted developmental psychology from studying the child in isolation to the child within layered environmental contexts. He later revised the model into PPCT (Person-Process-Context-Time).",
+overview:"Human behavior is shaped by nested environmental systems: Microsystem (immediate relationships) → Mesosystem (interactions between microsystems) → Exosystem (indirect contexts) → Macrosystem (culture, laws, values) → Chronosystem (change over time).",
+history:"Proposed in The Ecology of Human Development (1979). Bronfenbrenner shifted developmental psychology from studying the child in isolation to the child within layered environmental contexts.",
+methodType:"Theoretical Synthesis and Literature Review (No Single Experiment)",
+methodology:"Bronfenbrenner's 1979 book is primarily a theoretical synthesis and critique of existing developmental psychology methodology. He reviewed hundreds of developmental studies and argued they were ecologically invalid — studying children in artificial settings (labs, isolated dyads) rather than natural nested environments. His empirical contribution was largely methodological: advocating for naturalistic longitudinal research designs that measure the interaction between levels of the ecological system over time. Subsequent researchers operationalized the model by measuring variables at multiple ecological levels and testing their independent and interactive contributions to child outcomes (e.g., Project Head Start evaluations assessing both family microsystem and community exosystem factors simultaneously).",
 citation:"Bronfenbrenner, U. (1979). The Ecology of Human Development: Experiments by Nature and Design. Harvard University Press.",
-pros:["Captures environmental complexity that individual-level models miss","Explains why individual behavior change fails when environments don't change","Essential for public policy, school-based interventions, and community-level design"],
-cons:["Descriptive rather than mechanistic — doesn't specify causal pathways","Operationalizing all system levels simultaneously is practically very difficult","Macro and exosystem-level change is slow, expensive, and politically contested"],
-notes:"Bronfenbrenner's framework underpins why 'changing the environment' is consistently more effective than targeting individual motivation — a core insight of behavioral public health."},
+pros:["Captures environmental complexity that individual-level models miss","Explains why individual-level behavior change fails when environments remain unchanged","Essential for public policy, school-based interventions, and community-level design"],
+cons:["Descriptive rather than mechanistic — doesn't specify causal pathways between levels","Operationalizing all system levels simultaneously is practically very difficult","Macro and exosystem-level change is slow, expensive, and politically contested"],
+notes:"Bronfenbrenner later revised the model into PPCT (Person-Process-Context-Time) to better capture the active role of the person within the system — not just passive reception of environmental influence."},
 
 {name:"Situational Strength Theory",cat:"Social & Environmental",year:2010,author:"Ryan Meyer, Reeshad Dalal & Rustin Hermida",catKey:"Social",
-overview:"Strong situations (clear cues, consistent expectations, meaningful consequences, behavioral constraints) leave little room for individual differences like personality to predict behavior. Weak situations are ambiguous, allowing personality to emerge. Environment design matters more than selection.",
-history:"Building on Mischel's (1968) person-situation debate, Meyer et al. (2010) formalized Situational Strength with four dimensions: Clarity, Consistency, Constraints, and Consequences. Explains why personality tests have limited predictive utility in structured work environments.",
+overview:"Strong situations (clear cues, consistent expectations, meaningful consequences, constraints) leave little room for personality to predict behavior. Weak situations allow personality to emerge. Environment design matters more than selection.",
+history:"Building on Mischel's (1968) person-situation debate, Meyer et al. (2010) formalized Situational Strength with four dimensions: Clarity, Consistency, Constraints, and Consequences.",
+methodType:"Literature Review and Conceptual Synthesis",
+methodology:"Meyer, Dalal & Hermida (2010) published a systematic literature review in the Journal of Management covering the situational strength concept across decades of personality, I/O psychology, and social psychology research. They operationalized 'situational strength' through four facets (Clarity: how clear are behavioral expectations? Consistency: are cues aligned across sources? Constraints: how limited is behavioral latitude? Consequences: how significant are outcomes of deviation?). They derived testable predictions: personality should predict behavior more in weak than strong situations. Subsequent empirical tests by Dalal et al. used experience-sampling methodology (ESM) — asking workers multiple times per day to rate situational strength and their current behavior — finding personality-behavior correlations were indeed moderated by situational strength.",
 citation:"Meyer, R. D., Dalal, R. S., & Hermida, R. (2010). A review and synthesis of situational strength in the organizational sciences. Journal of Management, 36(1), 121–140.",
-pros:["Explains why personality poorly predicts behavior in structured environments","Justifies investment in environment design over individual trait selection","Provides a framework for understanding organizational behavior variance"],
-cons:["Strong vs. weak is a spectrum, not a binary — operationalization is difficult","Not a behavior change model per se — primarily explanatory","Limited practical tools for deliberately modifying situational strength"],
-notes:"This is why good product, classroom, and workplace design matters more than individual willpower: a strong situation (clear, constrained, consequential) systematically overrides individual differences."},
+pros:["Explains why personality poorly predicts behavior in structured environments","Justifies investment in environment design over individual trait selection","Provides a framework for understanding variance in organizational behavior"],
+cons:["Strong vs. weak is a spectrum — operationalization varies across studies","Primarily explanatory, not a behavior change model","Limited practical tools for deliberately modifying situational strength"],
+notes:"This is why good product, classroom, and workplace design matters more than willpower: a strong situation (clear, constrained, consequential) systematically overrides individual differences."},
 
 {name:"Least Effort Principle",cat:"Friction & Effort",year:1949,author:"George Kingsley Zipf (behavioral application: multiple authors)",catKey:"Friction",
-overview:"Given multiple paths to a goal, people take the path requiring the least effort. Adding friction to a behavior reduces its frequency; removing friction increases it. One of the most universal and reliable behavioral principles across species.",
-history:"Zipf's Principle of Least Effort (1949) was originally linguistic and informational. Behavioral economists and Fogg extended it: friction is the most reliable single lever for changing behavior. The default effect is this principle operationalized as policy.",
+overview:"Given multiple paths to a goal, people take the path requiring the least effort. Adding friction to a behavior reduces its frequency; removing friction increases it. One of the most universal and reliable behavioral principles.",
+history:"Zipf's Principle of Least Effort (1949) was originally linguistic and informational. Behavioral economists and Fogg extended it: friction is the most reliable lever for behavior change.",
+methodType:"Linguistic Analysis + Behavioral Extension (Cross-Domain Synthesis)",
+methodology:"Zipf's original work was quantitative linguistic analysis: he analyzed word frequency distributions in large text corpora and found that word rank × word frequency ≈ constant (Zipf's Law). He interpreted this as evidence for a least-effort optimization across communication. Behavioral scientists extended the principle empirically: studies of library book placement showed book checkout rates were heavily determined by physical proximity to the checkout desk (Sommer, 1974). Environmental design studies showed that stair use vs. elevator use was highly sensitive to staircase visibility and step count. Online form completion studies showed abandonment rates increased dramatically with each additional required field. The 'least effort' principle in behavior change has been operationalized through friction-based interventions (e.g., reducing the number of steps required to donate to charity) with documented effectiveness.",
 citation:"Zipf, G. K. (1949). Human Behavior and the Principle of Least Effort: An Introduction to Human Ecology. Addison-Wesley.",
-pros:["Extremely reliable — applies universally across behavior types and contexts","Simple to implement: add or remove steps","Doesn't require the target person's awareness, motivation, or cognitive engagement to work"],
-cons:["Addresses surface structure of behavior, not underlying motivation","Reducing friction can backfire at scale if the behavior is harmful","Doesn't account for meaningful effort-seeking (people choose hard things for intrinsic reasons)"],
-notes:"BJ Fogg's entire practical framework is largely an operationalization of this principle: when motivation is uncertain, the most reliable lever is reducing effort (raising Ability)."},
+pros:["Extremely reliable — applies universally across behavior types and contexts","Simple to implement: add or remove steps","Works without requiring the target person's awareness, motivation, or engagement"],
+cons:["Addresses surface structure, not underlying motivation","Reducing friction can backfire at scale if the behavior is harmful","Ignores meaningful effort-seeking (people choose hard things for intrinsic reasons)"],
+notes:"BJ Fogg's entire practical framework is largely an operationalization of this principle: when motivation is uncertain, reducing effort (raising Ability) is the most reliable lever."},
 
 {name:"Default Effect",cat:"Friction & Effort",year:2003,author:"Eric Johnson & Daniel Goldstein",catKey:"Friction",
 overview:"People strongly tend to accept whatever option is pre-selected as the default. Defaults leverage status quo bias, loss aversion, and effort avoidance simultaneously. Switching the default is among the highest-impact, lowest-cost behavior change interventions known.",
-history:"Johnson & Goldstein's (2003) Science paper analyzed cross-national organ donation rates and found opt-out countries had rates near 100% while opt-in countries clustered near 20% — driven entirely by the default, not cultural attitudes toward donation.",
+history:"Johnson & Goldstein's (2003) Science paper demonstrated that cross-national organ donation rate differences (near-100% vs. ~20%) were driven entirely by opt-out vs. opt-in defaults — not cultural attitudes.",
+methodType:"Online Experiment (N=161) + Cross-National Archival Analysis",
+methodology:"Johnson & Goldstein (2003) used two complementary methods. Study 1 — Online experiment: 161 participants were randomly assigned to one of three default conditions: (a) opt-in (default = not a donor; must actively choose to be one), (b) opt-out (default = donor; must actively choose not to be), or (c) neutral (must actively choose one way or another, no default). Consent rates: opt-in ≈ 42%, opt-out ≈ 82%, neutral ≈ 79%. Study 2 — Archival analysis: compared actual organ donor registration rates across 11 European countries, finding near-100% rates in opt-out countries (Austria 99.98%, Belgium 98%, France 99.91%) vs. low rates in opt-in countries (Denmark 4.25%, Germany 12%, UK 17%). The pattern held even controlling for health system differences.",
 citation:"Johnson, E. J., & Goldstein, D. (2003). Do defaults save lives? Science, 302(5649), 1338–1339.",
-pros:["High impact with near-zero delivery cost","Works entirely without requiring conscious deliberation by the target person","Documented across organ donation, retirement savings, energy tariffs, and health decisions"],
-cons:["Ethical legitimacy depends entirely on who sets the default and for what purpose","Opt-out can feel coercive when stakes are high or reversing is difficult","Effect diminishes if people become aware that defaults are being used strategically"],
-notes:"Auto-enrollment in 401(k) retirement plans in the U.S. increased participation from ~49% to ~86% in one study — a dramatic outcome from switching a default, not from any educational intervention."},
+pros:["High impact with near-zero delivery cost","Works without requiring any conscious deliberation from the target person","Documented across organ donation, retirement savings, energy tariffs, food choices"],
+cons:["Ethical legitimacy depends entirely on who sets the default and for what purpose","Opt-out can feel coercive when stakes are high or reversing is difficult","Effect diminishes if people become aware that defaults are being strategically used"],
+notes:"Auto-enrollment in 401(k) retirement plans increased participation from ~49% to ~86% in Madrian & Shea's (2001) natural experiment — a dramatic outcome from switching a single default."},
 
 {name:"Implementation Intentions",cat:"Friction & Effort",year:1999,author:"Peter Gollwitzer",catKey:"Friction",
-overview:"Specific if-then plans ('If situation X occurs, I will do Y') dramatically increase goal attainment. The mental representation of the anticipated situation becomes highly accessible, enabling automatic, effortless initiation of planned behavior when the cue is encountered.",
-history:"Gollwitzer published the defining paper in 1999. His meta-analysis with Sheeran (2006) across 94 studies found a medium-to-large effect size (d = 0.65) on goal attainment — one of the larger effects in behavior change research.",
-citation:"Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503. Gollwitzer, P. M., & Sheeran, P. (2006). Meta-Analysis of Studies Testing the Moderating Roles of Motives and Power. Advances in Experimental Social Psychology, 38, 69–119.",
-pros:["Strong meta-analytic support (d = 0.65 across 94 studies)","Directly closes the intention-behavior gap that TPB and HBM identify but don't solve","Simple, free, and teachable in minutes — high ratio of benefit to effort"],
-cons:["Works best when goal intention is already strong — not a substitute for motivation","Specificity requirement limits it for goals without clear situational cues","May produce rigid, scripted responding that isn't adaptive to changing circumstances"],
-notes:"Oettingen's WOOP (Wish-Outcome-Obstacle-Plan) combines Mental Contrasting with an implementation intention as the 'Plan' step — the empirically strongest combination for goal attainment."},
+overview:"Specific if-then plans ('If situation X occurs, I will do Y') dramatically increase goal attainment by making the anticipated situation highly accessible, enabling automatic initiation of the planned behavior when the cue is encountered.",
+history:"Gollwitzer published the defining paper in 1999. His meta-analysis with Sheeran (2006) across 94 studies found a medium-to-large effect (d = 0.65) — one of the stronger effects in behavior change research.",
+methodType:"Laboratory and Field Experiments + Meta-Analysis (94 Studies)",
+methodology:"Implementation intention experiments follow a standard paradigm: participants in an experimental group are asked to form a specific if-then plan in addition to stating their goal intention ('I intend to do X'). Control participants state only the goal intention or receive no-goal instructions. Outcomes are measured behaviorally (e.g., appointment attendance, pill taking, fruit consumption, exam preparation). Gollwitzer & Brandstätter (1997) demonstrated the design with university students: those who formed implementation intentions about when/where/how to send a report during Christmas vacation were significantly more likely to do so compared to those who only stated intention. The proposed mechanism — heightened cognitive accessibility of the anticipated situation — was tested by measuring response times to situation-related words after implementation intention formation.",
+citation:"Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503. Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis. Advances in Experimental Social Psychology, 38, 69–119.",
+pros:["Strong meta-analytic support (d = 0.65 across 94 studies)","Directly closes the intention-behavior gap that TPB identifies but doesn't solve","Simple, free, and teachable in minutes — exceptional benefit-to-effort ratio"],
+cons:["Works best when strong goal intention already exists","Specificity requirement limits use for goals without clear situational cues","May produce rigid scripted responding that's not adaptive to changing circumstances"],
+notes:"Oettingen's WOOP (Wish-Outcome-Obstacle-Plan) explicitly incorporates an implementation intention as the 'Plan' step — combining mental contrasting with if-then planning for amplified effectiveness."},
 
 {name:"Temptation Bundling",cat:"Friction & Effort",year:2014,author:"Katherine Milkman, Julia Minson & Kevin Volpp",catKey:"Friction",
-overview:"Pairing a temptation (instantly enjoyable) with a chore (valuable but effortful) increases motivation to perform the chore. The temptation is restricted to the bundled context only. You get to listen to your favorite podcast only while at the gym.",
-history:"Milkman et al.'s 2014 Management Science paper demonstrated that gym attendance significantly increased when iPods loaded with tempting audiobooks were available only at the gym. Built on the Premack Principle but operationalized specifically for present-bias and competing impulses.",
+overview:"Pairing a temptation (instantly enjoyable) with a chore (valuable but effortful) increases motivation to perform the chore. The temptation is restricted to the bundled context only — you only listen to your favorite podcast while at the gym.",
+history:"Milkman et al.'s 2014 Management Science paper demonstrated that gym attendance increased significantly when iPods with tempting audiobooks were available only at the gym. Built on the Premack Principle but operationalized for present-bias.",
+methodType:"Field Experiment (University Gym, Random Assignment)",
+methodology:"Milkman, Minson & Volpp (2014) conducted a field experiment at the university gym. In Study 1 (pilot): participants received iPods loaded with tempting audiobooks of their choice. Half were asked to keep the iPod only at the gym (bundled condition); the other half kept it with them at all times (control). Gym visit rates were tracked via ID swipes for 7 weeks. Study 2 (full RCT): 226 participants were randomly assigned to (a) instant access to tempting audiobooks at the gym only (bundled), (b) gave iPods outright (free access), or (c) control. Gym visits were significantly higher for the bundled condition. Effect was most pronounced for people who reported lower intrinsic motivation for exercise. The mechanism: temptation bundling reduces the relative cost of the effortful behavior by attaching immediate hedonic benefit.",
 citation:"Milkman, K. L., Minson, J. A., & Volpp, K. G. M. (2014). Holding the Hunger Games hostage at the gym: An evaluation of temptation bundling. Management Science, 60(2), 283–299.",
-pros:["Addresses present bias directly — makes effortful behavior immediately rewarding","Low-cost and self-administered without external support","Growing body of behavioral economics research supporting the mechanism"],
-cons:["Requires actually restricting the temptation to the bundled context — discipline required up front","Effectiveness can fade over time as the pairing becomes routine","Only works if the temptation is genuinely compelling enough to motivate"],
-notes:"Present bias — overweighting immediate costs relative to delayed benefits — is the core mechanism this targets. It's why people prefer Netflix now over exercise now, even when they genuinely value fitness more."},
+pros:["Addresses present bias directly — makes effortful behavior immediately rewarding","Low-cost and self-administered","Growing body of behavioral economics research supporting the mechanism"],
+cons:["Requires actually restricting the temptation to the bundled context — discipline required up front","Effectiveness fades over time as pairing becomes routine","Only works if the temptation is genuinely compelling enough to motivate"],
+notes:"Present bias — overweighting immediate costs relative to delayed benefits — is the core mechanism targeted. It's why people prefer Netflix now over exercise now, even when they genuinely value fitness more."},
 
 {name:"Commitment Devices",cat:"Friction & Effort",year:1978,author:"Thomas Schelling (formalized; concept is ancient)",catKey:"Friction",
-overview:"A voluntary restriction made now to constrain future options, making it harder to defect from a goal when willpower is low. Examples: locking savings in an illiquid account, social accountability contracts, removing temptations from the home environment.",
-history:"Schelling formalized commitment devices in his analysis of self-control and game theory (1978). Ariely and behavioral economics colleagues brought it into mainstream research. StickK.com (founded by Ayres, Dean & Karlan) operationalized financial commitment contracts.",
+overview:"A voluntary restriction made now to constrain future options, making it harder to defect from a goal when willpower is low. Examples: locking savings in an illiquid account, social accountability contracts, removing temptations from the home.",
+history:"Schelling formalized commitment devices in his self-management game theory analysis (1978). StickK.com (Ayres, Dean & Karlan) operationalized financial commitment contracts. Ariely and behavioral economists brought it into mainstream research.",
+methodType:"Game Theory Analysis + Field Experiments (Financial Contracts)",
+methodology:"Schelling's (1978) paper was theoretical game theory analysis applying intertemporal conflict framing to self-control. Empirical testing came through field experiments: Ashraf, Karlan & Yin (2006) conducted an RCT in the Philippines with 1,777 bank clients randomly offered a 'SEED' savings account with self-imposed withdrawal restrictions (clients chose their own terms). Clients offered SEED accounts saved significantly more over 12 months than control clients. Ariely & Wertenbroch (2002) found that students offered the option to self-impose evenly spaced deadlines (vs. single final deadline) showed better task completion — even though the early deadlines were costly if missed. Bryan et al. (2010) meta-analyzed commitment devices across 21 studies, finding meaningful but heterogeneous effects across contexts.",
 citation:"Schelling, T. C. (1978). Egonomics, or the Art of Self-Management. The American Economic Review, 68(2), 290–294.",
 pros:["Addresses self-control failure before it occurs — not during temptation","Calibratable: from soft social accountability to hard financial penalties","Financial commitment contracts show meaningful increases in behavior change completion rates"],
-cons:["Requires accurate self-prediction of future temptation — often inaccurate","Overly restrictive commitments can trigger reactance and behavioral rebellion","Financial stakes can produce anxiety that undermines wellbeing and creates perverse incentives"],
-notes:"Odysseus tying himself to the mast while passing the Sirens is the archetypal commitment device. Modern equivalents: leaving your phone in the car, giving friends money to hold, scheduling the appointment in advance."},
+cons:["Requires accurate self-prediction of future temptation — often inaccurate","Overly restrictive commitments can trigger reactance and behavioral rebellion","Financial stakes can produce anxiety that undermines wellbeing"],
+notes:"Odysseus tying himself to the mast while passing the Sirens is the archetypal commitment device. Modern equivalents: leaving your phone in the car, giving friends money to hold, scheduling appointments in advance."},
 
 {name:"SMART Goals",cat:"Goal-Setting",year:1981,author:"George T. Doran",catKey:"Goal",
-overview:"Goals should be Specific, Measurable, Achievable (or Assignable), Relevant (or Realistic), and Time-bound. The framework ensures goals are operationalized clearly enough to guide action and evaluate progress — converting vague aspirations into actionable targets.",
-history:"Doran published a single-page management paper in Management Review (November 1981) proposing SMART as a mnemonic for writing management objectives. It became possibly the most widely used goal-setting framework globally despite having no dedicated empirical validation literature.",
+overview:"Goals should be Specific, Measurable, Achievable (or Assignable), Relevant (or Realistic), and Time-bound. The framework ensures goals are operationalized clearly enough to guide action and evaluate progress.",
+history:"Doran published a single-page management paper in Management Review (November 1981) proposing SMART as a mnemonic for writing management objectives. It became possibly the most widely used goal-setting framework globally.",
+methodType:"Practitioner Mnemonic (No Empirical Study)",
+methodology:"Doran's 1981 paper is a one-page opinion/practice piece in a management trade journal, not a research study. No sample, no control group, no outcome data — it is a proposed mnemonic for operationalizing management objectives, drawn from Doran's professional consulting experience. The paper has no formal methodology section. Empirical testing of SMART goals has been conducted by others since (e.g., Rubin, 2002) with mixed results. The actual empirical evidence base for goal-setting comes from Locke & Latham's program, not from Doran's paper. Notably, Locke & Latham's findings sometimes conflict with SMART's 'Achievable' criterion — they show difficult goals outperform achievable ones.",
 citation:"Doran, G. T. (1981). There's a S.M.A.R.T. way to write management's goals and objectives. Management Review, 70(11), 35–36.",
 pros:["Instantly teachable and widely understood","Forces operationalization of vague goals into concrete actions","Broadly applicable across personal, educational, and organizational contexts"],
-cons:["No peer-reviewed empirical validation of the specific five criteria","'Achievable' and 'Realistic' may systematically suppress ambition and stretch goals","Can be applied mechanically, producing goals that are SMART but not meaningful"],
-notes:"Locke & Latham's Goal-Setting Theory — the actual empirical evidence base — suggests difficult goals outperform easy ones. This directly contradicts SMART's 'Achievable/Realistic' criterion for high-performance contexts."},
+cons:["No peer-reviewed empirical validation of the specific five criteria","'Achievable' and 'Realistic' may systematically suppress ambition","Can be applied mechanically, producing goals that are SMART but not meaningful"],
+notes:"Locke & Latham's Goal-Setting Theory — the actual evidence base — shows difficult goals outperform easy/achievable ones. This directly contradicts SMART's 'Achievable/Realistic' criterion in high-performance contexts."},
 
 {name:"Goal-Setting Theory",cat:"Goal-Setting",year:1990,author:"Edwin Locke & Gary Latham",catKey:"Goal",
-overview:"Specific, difficult goals produce higher performance than vague or easy goals. Four mechanisms link goals to performance: focusing attention, mobilizing effort, increasing persistence, and developing task-relevant strategies. Feedback and commitment moderate the effects.",
-history:"Locke published early studies in the 1960s showing specific, hard goals outperform 'do your best' instructions. Latham collaborated from the 1970s. Their 1990 book synthesized 400 studies and remains the most empirically supported theory in organizational psychology.",
+overview:"Specific, difficult goals produce higher performance than vague or easy goals. Four mechanisms link goals to performance: focusing attention, mobilizing effort, increasing persistence, and developing task-relevant strategies.",
+history:"Locke published early studies in the 1960s; Latham collaborated from the 1970s. Their 1990 book synthesized 400 studies and remains the most empirically supported theory in organizational psychology.",
+methodType:"Laboratory and Field Experiments (400+ studies synthesized)",
+methodology:"Locke & Latham's research program used both laboratory and field experiments. Lab methodology: participants (typically university students) assigned to one of several goal conditions — 'do your best,' easy specific goal, moderately difficult goal, or hard specific goal — then performed a quantitative task (e.g., brainstorming uses for common objects, arithmetic, driving simulation). Performance (quantity and quality) was measured immediately. Field studies: wood harvesting crews, truck drivers, typists, and engineers were given assigned hard vs. do-your-best goals; performance tracked over weeks or months via objective records. The 2002 meta-analytic review across 35 years of research confirmed the 'specificity and difficulty' principle held with effect sizes (d ≈ 0.5–0.8) across cultures, tasks, and settings. Moderators (feedback, commitment, task complexity) were also systematically investigated.",
 citation:"Locke, E. A., & Latham, G. P. (1990). A Theory of Goal Setting and Task Performance. Prentice Hall. Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting. American Psychologist, 57(9), 705–717.",
-pros:["Most replicated finding in organizational behavior — hundreds of supporting studies","Specific, difficult goals consistently outperform 'do your best' instructions across cultures and task types","Effect size is robust (d ≈ 0.5–0.8) and practically significant"],
-cons:["Difficult goals can increase unethical behavior to meet them (tunnel vision + pressure)","Performance degrades for complex novel tasks — goals create tunnel vision that inhibits exploration","Doesn't address what to do after goal attainment — can create post-achievement emptiness"],
-notes:"The Wells Fargo account fraud scandal is a cautionary tale: specific, difficult sales goals reliably increase performance — and, when combined with incentive pressure and weak oversight, also unethical shortcuts."},
+pros:["Most replicated finding in organizational behavior — hundreds of supporting studies","Specific, difficult goals consistently outperform 'do your best' across cultures and tasks","Effect size is robust (d ≈ 0.5–0.8) and practically significant"],
+cons:["Difficult goals can increase unethical behavior to meet them (tunnel vision + incentive pressure)","Performance degrades for complex novel tasks — goals create tunnel vision inhibiting exploration","Doesn't address what to do after goal attainment — can create post-achievement emptiness"],
+notes:"The Wells Fargo account fraud scandal is a cautionary tale: specific, difficult sales goals reliably increase performance — and, under incentive pressure with weak oversight, also unethical shortcuts."},
 
 {name:"Regulatory Focus Theory",cat:"Goal-Setting",year:1997,author:"E. Tory Higgins",catKey:"Goal",
-overview:"People pursue goals through one of two motivational orientations: Promotion focus (seeking gains, advancement, aspirations — eager approach, sensitive to hits and misses) or Prevention focus (avoiding losses, fulfilling obligations, safety — vigilant avoidance, sensitive to presence/absence of errors).",
-history:"Higgins proposed the theory in a Psychological Review paper (1997), extending Freud's approach-avoidance distinction through a cognitive social psychology lens. It became foundational in consumer psychology, persuasion research, and leadership science.",
+overview:"People pursue goals through two motivational orientations: Promotion focus (seeking gains, aspirations — eager approach) or Prevention focus (avoiding losses, obligations — vigilant avoidance). Each responds differently to messages and incentives.",
+history:"Higgins proposed the theory in a 1997 Psychological Review paper, extending Freud's approach-avoidance distinction through cognitive social psychology. Foundational to persuasion research, consumer psychology, and leadership.",
+methodType:"Laboratory Experiments (Anagram Tasks, Persuasion Paradigms)",
+methodology:"Higgins and colleagues conducted multiple experiments to establish regulatory focus effects. Key study (Shah, Higgins & Friedman, 1998): participants completed either a promotion-focus or prevention-focus priming task (writing about hopes/aspirations vs. duties/obligations), then worked on anagram tasks. Promotion-focused participants showed faster response times for 'gain' outcomes (hits); prevention-focused for 'non-loss' outcomes (correct rejections). Persuasion experiments (Cesario et al., 2004) manipulated message framing (gain-framed vs. loss-framed messages about exercise) and recipient regulatory focus, finding regulatory fit — match between message framing and recipient focus — increased persuasion, attitude strength, and behavioral intention. The Regulatory Focus Questionnaire (RFQ) was developed to measure chronic individual differences in promotion vs. prevention orientation.",
 citation:"Higgins, E. T. (1997). Beyond pleasure and pain. American Psychologist, 52(12), 1280–1300.",
-pros:["Explains why identical messages work for some people but not others","Regulatory fit effect: matching message framing to focus significantly increases persuasion and satisfaction","Robust meta-analytic support across persuasion, consumer behavior, and performance contexts"],
-cons:["Individual chronic focus is difficult to measure reliably","Situationally-induced focus may override chronic focus unpredictably","Two-category model may oversimplify a spectrum of motivational orientations"],
-notes:"Regulatory fit: gain-framing works better for promotion-focused people, loss-framing for prevention-focused people. Mismatched framing is not just less effective — it actively reduces engagement and satisfaction."},
+pros:["Explains why identical messages work for some people but not others","Regulatory fit effect: matching framing to focus significantly increases persuasion","Robust meta-analytic support across persuasion, consumer behavior, and performance"],
+cons:["Individual chronic focus is difficult to measure reliably across contexts","Situationally-induced focus may override chronic focus unpredictably","Two-category model may oversimplify a spectrum of motivational orientations"],
+notes:"Regulatory fit: gain-framing works better for promotion-focused people, loss-framing for prevention-focused. Mismatched framing is not just less effective — it actively reduces engagement and satisfaction."},
 
 {name:"WOOP / Mental Contrasting",cat:"Goal-Setting",year:2000,author:"Gabriele Oettingen",catKey:"Goal",
-overview:"WOOP: Wish (name the goal) → Outcome (best result imagined vividly) → Obstacle (the internal barrier that stands in the way) → Plan (if [obstacle], then I will [behavior]). Mental Contrasting — imagining the positive future then the obstacle reality — creates energized, realistic commitment rather than passive wishful thinking.",
-history:"Oettingen's research (2000–2015) showed that pure positive visualization reduces motivation by creating a sense of having already arrived. Mental Contrasting activates commitment only when the person believes the goal is achievable. WOOP formalizes this into a four-step teachable tool.",
+overview:"WOOP: Wish (name the goal) → Outcome (vividly imagine the best result) → Obstacle (identify the inner barrier) → Plan (if [obstacle], then I will [behavior]). Mental Contrasting — imagining positive future then obstacle reality — creates energized, realistic commitment vs. passive fantasizing.",
+history:"Oettingen's research (2000–2015) showed pure positive visualization reduces motivation by simulating achievement. Mental Contrasting activates commitment only when success expectancy is moderate-to-high. WOOP formalizes this into a teachable four-step tool.",
+methodType:"Randomized Controlled Experiments (Multiple Domains)",
+methodology:"Oettingen & colleagues conducted a program of RCTs across multiple domains. Core methodology: participants randomly assigned to one of three conditions — (a) Mental Contrasting (imagine positive future outcome, then imagine the inner obstacle), (b) Indulging (imagine positive future only), or (c) Dwelling (think about the obstacle only). Physiological measures: systolic blood pressure and energy (measured via hand dynamometer grip strength) were taken before and after. Mental contrasting produced significantly higher energy mobilization than indulging, but only when participants reported high expectation of success — confirming the moderating role of expectancy. Oettingen & Gollwitzer later combined MCII (Mental Contrasting with Implementation Intentions) in RCTs showing WOOP outperformed either technique alone across academic, dietary, and physical activity outcomes (e.g., Duckworth et al., 2011, with middle-school students improving study habits).",
 citation:"Oettingen, G. (2000). Expectancy effects on behavior depend on self-regulatory thought. Social Cognition, 18(2), 101–129. Oettingen, G. (2014). Rethinking Positive Thinking. Current/Penguin.",
-pros:["Empirically supported across academic, health, and interpersonal domains","Directly challenges self-help orthodoxy (positive visualization) with experimental evidence","Combines two evidence-based techniques — Mental Contrasting + Implementation Intentions — for amplified effect"],
-cons:["Mental Contrasting works best when expectancy of success is moderate-to-high — with very low expectancy it can demotivate","WOOP mnemonic is simple but the underlying psychological process is more complex","Requires reflection capacity and some emotional tolerance for confronting obstacles"],
-notes:"Oettingen's most counterintuitive finding: pure positive fantasizing about success lowers systolic blood pressure and reduces energy mobilization — the body behaves as if the goal is already achieved, reducing motivation to pursue it."}
+pros:["Empirically supported across academic, health, and interpersonal domains","Directly challenges positive visualization orthodoxy with experimental evidence","Combines two evidence-based techniques (MC + implementation intentions) for amplified effect"],
+cons:["Mental Contrasting works best with moderate-to-high success expectancy — may demotivate with very low expectancy","WOOP mnemonic is simple but the underlying psychological process is more complex","Requires reflection capacity and emotional tolerance for confronting real obstacles"],
+notes:"Oettingen's most counterintuitive finding: pure positive fantasizing lowers systolic blood pressure and reduces energy mobilization — the body behaves as if the goal is already achieved, reducing the drive to pursue it."}
 ];
 
 const categories=["All","Habit Formation","Motivation & Drive","Decision-Making & Cognition","Behavior Change (Clinical/Applied)","Reinforcement & Conditioning","Identity & Values","Social & Environmental","Friction & Effort","Goal-Setting"];
@@ -516,7 +580,7 @@ function filterCards(){
     const author=card.dataset.author;
     const text=card.dataset.text||"";
     const matchCat=activeFilter==="All"||cat===activeFilter;
-    const matchSearch=!searchTerm||name.toLowerCase().includes(searchTerm)||author.toLowerCase().includes(searchTerm)||text.toLowerCase().includes(searchTerm);
+    const matchSearch=!searchTerm||name.includes(searchTerm)||author.includes(searchTerm)||text.includes(searchTerm);
     if(matchCat&&matchSearch){card.classList.remove("hidden");vis++;}
     else{card.classList.add("hidden");}
   });
@@ -526,17 +590,15 @@ function filterCards(){
 
 function buildCards(){
   const grid=document.getElementById("grid");
-  models.forEach((m,i)=>{
+  models.forEach((m)=>{
     const card=document.createElement("div");
     card.className="card";
     card.dataset.cat=m.cat;
     card.dataset.name=m.name.toLowerCase();
     card.dataset.author=m.author.toLowerCase();
-    card.dataset.text=(m.overview+" "+m.history+" "+(m.notes||"")).toLowerCase();
-
+    card.dataset.text=(m.overview+" "+m.history+" "+m.methodology+" "+(m.notes||"")).toLowerCase();
     const prosHTML=m.pros.map(p=>`<li>${p}</li>`).join("");
     const consHTML=m.cons.map(c=>`<li>${c}</li>`).join("");
-
     card.innerHTML=`
 <div class="card-head" onclick="toggleCard(this)">
   <div class="card-meta">
@@ -555,6 +617,13 @@ function buildCards(){
   <div class="detail-section">
     <div class="detail-label">History</div>
     <div class="detail-text">${m.history}</div>
+  </div>
+  <div class="detail-section">
+    <div class="detail-label">Methodology</div>
+    <div class="method-box">
+      <div class="method-type">${m.methodType}</div>
+      <p>${m.methodology}</p>
+    </div>
   </div>
   <div class="detail-section">
     <div class="detail-label">Citation</div>
@@ -578,8 +647,7 @@ function toggleCard(head){
   const toggle=head.querySelector(".toggle");
   const open=details.classList.toggle("open");
   toggle.classList.toggle("open",open);
-  const span=toggle.querySelector("span");
-  span.textContent=open?"Hide details":"Full details";
+  toggle.querySelector("span").textContent=open?"Hide details":"Full details";
 }
 
 document.getElementById("search").addEventListener("input",function(){
